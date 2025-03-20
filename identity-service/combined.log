@@ -1,0 +1,8 @@
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","level":"error","message":"Unhandled Rejection at","service":"identity-service","timestamp":"2025-03-20T15:09:12.344Z"}
+{"level":"info","message":"Identity service running on port 4000","service":"identity-service","timestamp":"2025-03-20T15:10:12.973Z"}
+{"level":"info","message":"Identity service running on port 4000","service":"identity-service","timestamp":"2025-03-20T15:10:42.529Z"}
+{"level":"error","message":"\u001b[31mRoute not found\u001b[39m","service":"identity-service","timestamp":"2025-03-20T15:10:47.073Z"}
+{"level":"info","message":"Identity service running on port 4000","service":"identity-service","timestamp":"2025-03-20T15:11:36.950Z"}
+{"level":"info","message":"Identity service running on port 4000","service":"identity-service","timestamp":"2025-03-20T15:11:40.429Z"}
+{"level":"error","message":"\u001b[31mRoute not found\u001b[39m","service":"identity-service","timestamp":"2025-03-20T15:11:48.781Z"}
+{"level":"info","message":"\u001b[35mPayflex microservice express API is running\u001b[39m","service":"identity-service","timestamp":"2025-03-20T15:12:05.085Z"}
