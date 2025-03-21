@@ -17,7 +17,7 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT;
-const BASE_PATH = process.env.BASE_PATH;
+const API_GATEWAY_URL = process.env.API_GATEWAY_URL;
 
 // Middlewares
 app.use(helmet());
@@ -28,7 +28,7 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: process.env.APP_ORIGIN,
+    origin: "*",
     credentials: true,
   })
 );
@@ -41,10 +41,10 @@ app.get(
   })
 );
 
-// app.use(rateLimiterMiddleware);
-app.use(`${BASE_PATH}/auth`,rateLimiterMiddleware, authRoutes);
-app.use(`${BASE_PATH}/user`, userRoutes);
-app.use(`${BASE_PATH}/ngn-transfer`, transferRoutes);
+app.use(rateLimiterMiddleware);
+app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/user", userRoutes);
+app.use("/api/v1/ngn-transfer", transferRoutes);
 
 app.use(errorHandler)
 

@@ -18,7 +18,7 @@ const userSchema = new mongoose.Schema(
     date_of_birth: { type: Date, required: [true, "Date of brith must be provided"] },
     profile_image: profile_image_schema,
     address: user_address_schema,
-    is_email_verified: { type: Boolean, default: false}
+    is_email_verified: { type: Boolean, default: true}
   },
   { timestamps: true }
 );

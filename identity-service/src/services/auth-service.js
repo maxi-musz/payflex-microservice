@@ -1,15 +1,81 @@
-import bcrypt from "bcryptjs";
 import User from "../models/user.model.js";
 import generateTokens from "../common/utils/generate-token.js";
-import db from "../config/db.js";
 import colors from "colors";
 import moment from "moment";
 import redisClient from "../config/redisClient.js";
 import jwt from "jsonwebtoken";
 import VerificationCode from "../models/verificationCode.model.js";
-import {Resend} from "resend";
 import crypto from "crypto";
-import { sendVerificationEmail } from "../common/helpers/send_email.js";
+import { sendOTPByEmail, sendWelcomeEmail } from "../mailers/send-emails.js";
+
+// Request email verification code 
+export const requestVerificationCode = async (email) => {
+  try {
+    console.log(colors.cyan("🔄 Processing verification request..."));
+
+    // Check if user exists
+    const existingUser = await User.findOne({ email });
+
+    if (existingUser) {
+      console.log(colors.red("User already exists"));
+      throw new Error("User already exists");
+    }
+
+    await VerificationCode.deleteMany({ email, expiresAt: { $lt: new Date() } });
+
+    // Check if an unused code exists and is still valid
+    const existingCode = await VerificationCode.findOne({ email });
+
+    if(existingCode) {
+      console.log(colors.red("Deleting existing OTP from db"))
+      await existingCode.deleteOne()
+    }
+
+    // Generate a new 4-digit code
+    const verificationCode = crypto.randomInt(1000, 9999).toString();
+    console.log(colors.yellow(`🔢 Generated new code: ${verificationCode}`));
+
+    // Save the new code in the database
+    await VerificationCode.create({
+      email,
+      code: verificationCode,
+      expiresAt: new Date(Date.now() + 5 * 60 * 1000), // 5 minutes expiry
+    });
+
+    console.log(colors.magenta("✅ New verification code saved to DB"));
+
+     // send code with google
+     await sendOTPByEmail(email, verificationCode);
+
+    return { success: true, message: "New verification code sent successfully" };
+  } catch (error) {
+    console.error(colors.red("❌ Error requesting verification code:"), error.message);
+    throw error;
+  }
+};
+
+// Verify Email code
+export const verifyEmailCode = async (email, code) => {
+  try {
+    const existingCode = await VerificationCode.findOne({ email, code });
+
+    if (!existingCode || new Date() > existingCode.expiresAt) {
+      return { success: false, message: "Invalid or expired code" };
+    }
+
+    await VerificationCode.findOneAndUpdate(
+      { email },
+      { $set: { is_email_verified: true } }, // Use $set to explicitly set the field
+      { new: true, runValidators: true }
+    );
+
+    console.log(colors.magenta("Email address successfully verified"))
+    return { success: true, message: "Email verified successfully" };
+  } catch (error) {
+    console.error("Error verifying email:", error);
+    throw new Error("Email verification failed.");
+  }
+};
 
 export const registerUserService = async (res, { 
   first_name, last_name, email, phone_number, address, gender, date_of_birth, password,
@@ -34,6 +100,8 @@ export const registerUserService = async (res, {
         message: "Email verification failed, retry verification"
       }
     }
+
+    await VerificationCode.findOneAndDelete(email)
 
     const formattedDOB = moment(date_of_birth, "DD-MM-YYYY").toDate();
 
@@ -101,12 +169,8 @@ export const loginUserService = async (req, res, { email, password }) => {
 
     console.log(colors.green(`✅ User logged in: ${user.email}`));
 
-    // Generate tokens
     const { accessToken, refreshToken } = generateTokens(res, user._id);
-    // console.log(colors.green("Generated Tokens:"), { accessToken, refreshToken });
-    // console.log(colors.blue(`🔐 Login successful and tokens generated for ${user.email}`));
 
-    // console.log(colors.blue("Refresh Token to Save:"), refreshToken);
     try {
       const save_refresh_token = await User.findByIdAndUpdate(user._id, { refresh_token: refreshToken });
       if(!save_refresh_token) {
@@ -197,81 +261,6 @@ export const refreshAccessTokenService = async (refreshToken) => {
   }
 };
 
-// Request email verification code 
-export const requestVerificationCode = async (email) => {
-  try {
-    const resend = new Resend(process.env.RESEND_API_KEY);
-    console.log(colors.cyan("🔄 Processing verification request..."));
-
-    // Check if user exists
-    const existingUser = await User.findOne({ email });
-
-    // if (existingUser) {
-    //   console.log(colors.red("User already exists"));
-    //   throw new Error("User already exists");
-    // }
-
-    await VerificationCode.deleteMany({ email, expiresAt: { $lt: new Date() } });
-
-    // Check if an unused code exists and is still valid
-    const existingCode = await VerificationCode.findOne({ email, used: false });
-
-    if (existingCode && new Date() < existingCode.expiresAt) {
-      console.log(colors.green(`✅ Reusing existing code: ${existingCode.code}`));
-      await sendVerificationEmail(resend, email, existingCode.code);
-      return { success: true, message: "Verification code sent successfully" };
-    }
-
-    // Generate a new 4-digit code
-    const verificationCode = crypto.randomInt(1000, 9999).toString();
-    console.log(colors.yellow(`🔢 Generated new code: ${verificationCode}`));
-
-    // Save the new code in the database
-    await VerificationCode.create({
-      email,
-      code: verificationCode,
-      expiresAt: new Date(Date.now() + 5 * 60 * 1000), // 5 minutes expiry
-    });
-
-    console.log(colors.magenta("✅ New verification code saved to DB"));
-
-    // Send new verification email
-    await sendVerificationEmail(resend, email, verificationCode);
-
-    return { success: true, message: "New verification code sent successfully" };
-  } catch (error) {
-    console.error(colors.red("❌ Error requesting verification code:"), error.message);
-    throw error;
-  }
-};
-
-// Verify Email code
-// 
-export const verifyEmailCode = async (email, code) => {
-  try {
-    const existingCode = await VerificationCode.findOne({ email, code });
-
-    if (!existingCode || new Date() > existingCode.expiresAt) {
-      return { success: false, message: "Invalid or expired code" };
-    }
-
-    // Update the user's email verification status
-    await VerificationCode.findOneAndUpdate(
-      { email },
-      { is_email_verified: true }
-    );
-
-    // Remove the verification code from the database after successful verification
-    // await VerificationCode.deleteOne({ email, code });
-
-    console.log(colors.magenta("Email address successfully verified"))
-    return { success: true, message: "Email verified successfully" };
-  } catch (error) {
-    console.error("Error verifying email:", error);
-    throw new Error("Email verification failed.");
-  }
-};
-
 export const resetPasswordService = async (email, new_password) => {
   try {
     console.log(colors.blue(`🔍 Searching for user with email: ${email}`));
@@ -283,7 +272,6 @@ export const resetPasswordService = async (email, new_password) => {
       return { success: false, message: "User not found" };
     }
 
-    // Just assign the new password (it will be hashed by the pre-save hook)
     user.password = new_password;
     await user.save();
 
