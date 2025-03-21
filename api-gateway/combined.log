@@ -1,0 +1,149 @@
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-20T15:44:32.375Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-20T15:44:32.377Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-20T15:50:56.629Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-20T15:50:56.629Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-20T15:51:05.128Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-20T15:51:05.128Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-03-20T15:51:33.666Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-20T15:51:33.667Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-03-20T15:52:32.639Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-20T15:52:32.642Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-20T15:52:46.468Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-20T15:52:46.469Z"}
+{"level":"error","message":"Proxy error: getaddrinfo ENOTFOUND http","service":"identity-service","timestamp":"2025-03-20T15:52:46.481Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-20T15:59:56.296Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-20T15:59:56.299Z"}
+{"level":"error","message":"Proxy error: getaddrinfo ENOTFOUND http","service":"identity-service","timestamp":"2025-03-20T15:59:56.366Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-20T16:00:44.869Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-20T16:00:44.872Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-20T16:01:23.686Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-20T16:01:23.689Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-20T16:02:03.103Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-20T16:02:03.106Z"}
+{"level":"error","message":"\u001b[31mRoute not found\u001b[39m","service":"identity-service","timestamp":"2025-03-20T16:02:03.106Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-20T16:03:04.135Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-20T16:03:04.137Z"}
+{"level":"error","message":"\u001b[31mFrom API-Gateway, Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-20T16:03:04.138Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-20T16:04:21.979Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-20T16:04:21.982Z"}
+{"level":"error","message":"\u001b[31mFrom API-Gateway, Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-20T16:04:21.983Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-20T16:10:49.094Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-20T16:10:49.097Z"}
+{"level":"error","message":"Proxy error: getaddrinfo ENOTFOUND http","service":"identity-service","timestamp":"2025-03-20T16:10:49.111Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-20T16:18:15.164Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-20T16:18:15.167Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-20T16:18:16.227Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-21T14:38:34.716Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T14:38:34.720Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T14:38:35.659Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-21T14:40:53.658Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T14:40:53.659Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-03-21T14:40:54.379Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-21T14:42:40.817Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T14:42:40.817Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-03-21T14:42:41.128Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-21T14:43:56.275Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T14:43:56.276Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-03-21T14:43:57.263Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-21T14:44:33.551Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T14:44:33.551Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-03-21T14:44:34.618Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-21T14:46:34.434Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T14:46:34.434Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T14:46:37.801Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/verify-email","service":"identity-service","timestamp":"2025-03-21T14:50:39.016Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T14:50:39.016Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"identity-service","timestamp":"2025-03-21T14:50:39.625Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-21T14:50:57.154Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T14:50:57.154Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T14:51:00.303Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/verify-email","service":"identity-service","timestamp":"2025-03-21T14:51:22.069Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T14:51:22.069Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T14:51:22.970Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-21T14:52:06.042Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T14:52:06.042Z"}
+{"level":"error","message":"Proxy error: ","service":"identity-service","timestamp":"2025-03-21T14:52:06.044Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-21T14:52:14.724Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T14:52:14.724Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T14:52:17.828Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/verify-email","service":"identity-service","timestamp":"2025-03-21T14:52:27.503Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T14:52:27.503Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T14:52:28.782Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/register","service":"identity-service","timestamp":"2025-03-21T14:52:53.370Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T14:52:53.370Z"}
+{"level":"info","message":"Response received from Identity service: 201","service":"identity-service","timestamp":"2025-03-21T14:52:54.187Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-21T14:53:41.008Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T14:53:41.008Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T14:53:43.896Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-21T14:56:29.917Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T14:56:29.918Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T14:56:33.151Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-21T14:58:34.684Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T14:58:34.685Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T14:58:42.842Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-21T14:59:10.011Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T14:59:10.012Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T14:59:13.407Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-21T15:01:39.325Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:01:39.325Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T15:01:42.597Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/verify-email","service":"identity-service","timestamp":"2025-03-21T15:02:48.070Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:02:48.070Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T15:02:48.696Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/register","service":"identity-service","timestamp":"2025-03-21T15:05:05.703Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:05:05.703Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"identity-service","timestamp":"2025-03-21T15:05:06.465Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-21T15:05:19.350Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:05:19.350Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T15:05:23.283Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/verify-email","service":"identity-service","timestamp":"2025-03-21T15:05:29.060Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:05:29.061Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T15:05:29.599Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/verify-email","service":"identity-service","timestamp":"2025-03-21T15:06:25.637Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:06:25.637Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T15:06:26.228Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/verify-email","service":"identity-service","timestamp":"2025-03-21T15:07:52.294Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:07:52.294Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T15:07:52.895Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-21T15:08:11.081Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:08:11.081Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T15:08:14.905Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/verify-email","service":"identity-service","timestamp":"2025-03-21T15:08:23.902Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:08:23.902Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T15:08:24.476Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/verify-email","service":"identity-service","timestamp":"2025-03-21T15:13:26.906Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:13:26.906Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"identity-service","timestamp":"2025-03-21T15:13:27.453Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-21T15:13:33.692Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:13:33.692Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T15:13:36.685Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/verify-email","service":"identity-service","timestamp":"2025-03-21T15:13:44.432Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:13:44.432Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T15:13:45.026Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/register","service":"identity-service","timestamp":"2025-03-21T15:14:11.979Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:14:11.979Z"}
+{"level":"info","message":"Response received from Identity service: 201","service":"identity-service","timestamp":"2025-03-21T15:14:12.853Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-21T15:17:25.703Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:17:25.703Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T15:17:29.134Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/verify-email","service":"identity-service","timestamp":"2025-03-21T15:17:43.412Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:17:43.412Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T15:17:44.127Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/register","service":"identity-service","timestamp":"2025-03-21T15:18:06.131Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:18:06.131Z"}
+{"level":"info","message":"Response received from Identity service: 201","service":"identity-service","timestamp":"2025-03-21T15:18:06.982Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/register","service":"identity-service","timestamp":"2025-03-21T15:19:10.643Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:19:10.643Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"identity-service","timestamp":"2025-03-21T15:19:11.259Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-21T15:19:26.669Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:19:26.669Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T15:19:29.850Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/verify-email","service":"identity-service","timestamp":"2025-03-21T15:19:40.036Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:19:40.036Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T15:19:40.599Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/register","service":"identity-service","timestamp":"2025-03-21T15:20:38.563Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:20:38.563Z"}
+{"level":"info","message":"Response received from Identity service: 201","service":"identity-service","timestamp":"2025-03-21T15:20:39.612Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-21T15:22:20.110Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:22:20.111Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T15:22:21.005Z"}

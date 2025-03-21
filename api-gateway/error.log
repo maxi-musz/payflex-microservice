@@ -1,0 +1,7 @@
+{"level":"error","message":"Proxy error: getaddrinfo ENOTFOUND http","service":"identity-service","timestamp":"2025-03-20T15:52:46.481Z"}
+{"level":"error","message":"Proxy error: getaddrinfo ENOTFOUND http","service":"identity-service","timestamp":"2025-03-20T15:59:56.366Z"}
+{"level":"error","message":"\u001b[31mRoute not found\u001b[39m","service":"identity-service","timestamp":"2025-03-20T16:02:03.106Z"}
+{"level":"error","message":"\u001b[31mFrom API-Gateway, Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-20T16:03:04.138Z"}
+{"level":"error","message":"\u001b[31mFrom API-Gateway, Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-20T16:04:21.983Z"}
+{"level":"error","message":"Proxy error: getaddrinfo ENOTFOUND http","service":"identity-service","timestamp":"2025-03-20T16:10:49.111Z"}
+{"level":"error","message":"Proxy error: ","service":"identity-service","timestamp":"2025-03-21T14:52:06.044Z"}
