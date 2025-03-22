@@ -3,17 +3,19 @@ import proxy from "express-http-proxy";
 import dotenv from "dotenv";
 import { RateLimiterRedis } from "rate-limiter-flexible";
 import redisClient from "./config/redisClient.js";
-import logger from "./utils/logger.js"
+import logger from "./utils/logger.js";
 import asyncHandler from "./middlewares/asyncHandler.js";
 import colors from "colors";
-import morgan from "morgan"
+import cookieParser from "cookie-parser";
 
 dotenv.config();
 
 const app = express();
 const port = process.env.PORT;
 
-app.use(morgan("dev"))
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser()); // ✅ Ensure cookie parsing is enabled
 
 // Rate limiting setup
 const rateLimiter = new RateLimiterRedis({
@@ -40,41 +42,55 @@ app.use(async (req, res, next) => {
   }
 });
 
+// Logging Middleware
 app.use((req, res, next) => {
   logger.info(`Received ${req.method} request to ${req.url}`);
-  logger.info(`Request body, ${req.body}`);
+  logger.info(`Request body: ${JSON.stringify(req.body)}`);
   next();
 });
 
 const proxyOptions = {
   proxyReqPathResolver: (req) => {
-    return req.originalUrl.replace(/^\/v1/, "/api");
+    const resolvedPath = req.originalUrl.replace(/^\/v1/, "/api");
+    console.log("Proxying request to:", resolvedPath);
+    return resolvedPath;
   },
-  proxyErrorHandler: (err, res, next) => {
-    logger.error(`Proxy error: ${err.message}`);
-    res.status(500).json({
-      message: `Internal server error`,
-      error: err.message,
-    });
+  proxyErrorHandler: (err, req, res) => {
+    logger.error(colors.red(`Proxy error: ${err.message}`));
+    res.status(500).json({ message: "Internal server error", error: err.message });
   },
 };
 
-
-// Proxy for Identity Service
+// ✅ Fixed Proxy Middleware for Identity Service
 app.use(
-  "/api/v1/auth",
+  ["/api/v1/auth", "/api/v1/user"],
   proxy(process.env.IDENTITY_SERVICE_URL, {
     ...proxyOptions,
     proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
       proxyReqOpts.headers["Content-Type"] = "application/json";
+      
+      // ✅ Forward cookies to identity service
+      if (srcReq.headers.cookie) {
+        proxyReqOpts.headers["cookie"] = srcReq.headers.cookie;
+      }
+
       return proxyReqOpts;
     },
+    userResHeaderDecorator: (headers, userReq, userRes, proxyReq, proxyRes) => {
+      // ✅ Allow cookies from Identity Service to be returned to the client
+      headers["Access-Control-Allow-Credentials"] = "true";
+      return headers;
+    },
     userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
-      logger.info(
-        `Response received from Identity service: ${proxyRes.statusCode}`
-      );
-
-      return proxyResData;
+      logger.info(`Response received from Identity service: ${proxyRes.statusCode}`);
+      
+      try {
+        const data = JSON.parse(proxyResData.toString("utf-8"));
+        return JSON.stringify(data);
+      } catch (err) {
+        logger.error("Error parsing proxy response:", err);
+        return proxyResData;
+      }
     },
   })
 );

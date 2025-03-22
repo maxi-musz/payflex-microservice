@@ -147,3 +147,152 @@
 {"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-21T15:22:20.110Z"}
 {"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-21T15:22:20.111Z"}
 {"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-21T15:22:21.005Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T09:49:24.069Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-22T09:49:24.073Z"}
+{"level":"error","message":"Proxy error: ","service":"identity-service","timestamp":"2025-03-22T09:49:24.081Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T09:53:41.884Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-22T09:53:41.884Z"}
+{"level":"error","message":"Proxy error: ","service":"identity-service","timestamp":"2025-03-22T09:53:41.888Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T09:54:26.175Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-22T09:54:26.179Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-22T09:54:26.187Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T09:56:00.233Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-03-22T09:56:00.238Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-22T09:56:00.246Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T09:56:46.227Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-03-22T09:56:46.230Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-22T09:56:46.238Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T09:57:14.858Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus\"}","service":"identity-service","timestamp":"2025-03-22T09:57:14.861Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-22T09:57:14.869Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T09:58:35.951Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus\"}","service":"identity-service","timestamp":"2025-03-22T09:58:35.955Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-22T09:58:35.962Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T10:00:48.811Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus\"}","service":"identity-service","timestamp":"2025-03-22T10:00:48.815Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-22T10:00:48.823Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T10:04:55.155Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus\"}","service":"identity-service","timestamp":"2025-03-22T10:04:55.158Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T10:04:55.963Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T10:05:42.655Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus\"}","service":"identity-service","timestamp":"2025-03-22T10:05:42.655Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T10:05:43.587Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T10:11:26.317Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus\"}","service":"identity-service","timestamp":"2025-03-22T10:11:26.318Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T10:11:27.184Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T10:16:14.756Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus\"}","service":"identity-service","timestamp":"2025-03-22T10:16:14.757Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T10:16:15.878Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T10:16:58.821Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus\"}","service":"identity-service","timestamp":"2025-03-22T10:16:58.821Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T10:16:59.762Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T10:19:37.748Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus\"}","service":"identity-service","timestamp":"2025-03-22T10:19:37.749Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T10:19:38.759Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T10:21:27.597Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T10:21:27.597Z"}
+{"level":"error","message":"\u001b[31mProxy error: socket hang up\u001b[39m","service":"identity-service","timestamp":"2025-03-22T10:22:34.049Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T10:24:06.947Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus\"}","service":"identity-service","timestamp":"2025-03-22T10:24:06.947Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T10:24:07.949Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T10:24:19.903Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus\"}","service":"identity-service","timestamp":"2025-03-22T10:24:19.904Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T10:24:20.840Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T10:27:09.147Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T10:27:09.147Z"}
+{"level":"error","message":"\u001b[31mProxy error: socket hang up\u001b[39m","service":"identity-service","timestamp":"2025-03-22T10:27:51.749Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T10:29:45.312Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T10:29:45.312Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T10:34:32.162Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T10:34:32.165Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T10:36:13.036Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T10:36:13.040Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T10:38:15.767Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T10:38:15.771Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T10:38:30.785Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus\"}","service":"identity-service","timestamp":"2025-03-22T10:38:30.785Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T10:38:31.777Z"}
+{"level":"error","message":"\u001b[31mProxy error: socket hang up\u001b[39m","service":"identity-service","timestamp":"2025-03-22T10:40:31.457Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T10:41:09.750Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T10:41:09.754Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T10:42:50.156Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T10:42:50.159Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-03-22T10:42:50.970Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T10:43:41.775Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T10:43:41.776Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-03-22T10:43:42.327Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T10:45:29.939Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T10:45:29.939Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T10:45:30.789Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T10:46:23.961Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T10:46:23.962Z"}
+{"level":"info","message":"Response received from Identity service: 401","service":"identity-service","timestamp":"2025-03-22T10:46:24.503Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T10:46:31.543Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus\"}","service":"identity-service","timestamp":"2025-03-22T10:46:31.543Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T10:46:32.442Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T10:48:39.489Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus\"}","service":"identity-service","timestamp":"2025-03-22T10:48:39.489Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T10:48:40.373Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T10:50:41.305Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus\"}","service":"identity-service","timestamp":"2025-03-22T10:50:41.306Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T10:50:42.384Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T10:52:39.330Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus\"}","service":"identity-service","timestamp":"2025-03-22T10:52:39.335Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T10:52:40.407Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T10:53:12.902Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T10:53:12.903Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T10:53:13.580Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T10:57:15.158Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T10:57:15.158Z"}
+{"level":"info","message":"Response received from Identity service: 401","service":"identity-service","timestamp":"2025-03-22T10:57:15.575Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T10:57:42.500Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T10:57:42.501Z"}
+{"level":"info","message":"Response received from Identity service: 401","service":"identity-service","timestamp":"2025-03-22T10:57:42.959Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T10:57:53.968Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus\"}","service":"identity-service","timestamp":"2025-03-22T10:57:53.969Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T10:57:54.938Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T10:58:01.248Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T10:58:01.248Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T10:58:02.108Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T10:59:08.727Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T10:59:08.727Z"}
+{"level":"info","message":"Response received from Identity service: 401","service":"identity-service","timestamp":"2025-03-22T10:59:09.104Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T10:59:18.305Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus\"}","service":"identity-service","timestamp":"2025-03-22T10:59:18.305Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T10:59:19.292Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T10:59:39.709Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T10:59:39.709Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T10:59:40.460Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T11:09:12.433Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T11:09:12.434Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-03-22T11:09:12.853Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T11:09:52.361Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T11:09:52.361Z"}
+{"level":"info","message":"Response received from Identity service: 403","service":"identity-service","timestamp":"2025-03-22T11:09:52.752Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-22T11:09:59.774Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus\"}","service":"identity-service","timestamp":"2025-03-22T11:09:59.774Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T11:10:01.062Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T11:10:59.077Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T11:10:59.078Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-03-22T11:10:59.607Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T11:18:56.652Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T11:18:56.652Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-03-22T11:19:03.017Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T11:21:06.636Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T11:21:06.637Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-03-22T11:21:07.501Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T11:28:20.646Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T11:28:20.646Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-03-22T11:28:21.575Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-22T11:29:39.622Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T11:29:39.622Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-03-22T11:29:40.518Z"}
+{"level":"info","message":"Received GET request to /api/v1/user/dashboard","service":"identity-service","timestamp":"2025-03-22T11:30:48.397Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T11:30:48.397Z"}
+{"level":"error","message":"\u001b[31mFrom API-Gateway, Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-22T11:30:48.397Z"}
+{"level":"info","message":"Received GET request to /api/v1/auth/user/dashboard","service":"identity-service","timestamp":"2025-03-22T11:31:05.449Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T11:31:05.449Z"}
+{"level":"info","message":"Response received from Identity service: 404","service":"identity-service","timestamp":"2025-03-22T11:31:05.689Z"}
+{"level":"info","message":"Received GET request to /api/v1/auth/user/dashboard","service":"identity-service","timestamp":"2025-03-22T11:32:30.969Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-22T11:32:30.972Z"}
+{"level":"info","message":"Response received from Identity service: 404","service":"identity-service","timestamp":"2025-03-22T11:32:31.236Z"}

@@ -8,6 +8,62 @@ import colors from "colors";
 import { verificationEmailSchema } from "../common/validators/auth.validator.js";
 import User from "../models/user.model.js";
 import VerificationCode from "../models/verificationCode.model.js";
+import RefreshToken from "../models/refreshToken.model.js";
+import logger from "../common/utils/logger.js";
+import generateTokens from "../common/utils/generate-token.js";
+
+// @desc    Request verification code
+// @route   POST /api/auth/verify-email/request-code
+// @access  Public
+export const requestEmailVerification = asyncHandler(async (req, res, next) => {
+  console.log(colors.cyan("Requesting email verification code"));
+  
+  try {
+    // const userId = req.user.id;
+    const { email } = req.body;
+
+    const result = await requestVerificationCode(email);
+
+    if(!result.success) {
+      console.log("Error sending verirfction code")
+      res.status(500).json({
+        success: result.success,
+        message: result.message
+      })
+    }
+
+    res.status(200).json({ 
+      success: true, 
+      message: "Verification code sent"
+     });
+  } catch (error) {
+    next(error); // Pass error to the global error handler
+  }
+});
+
+// 
+export const verifyEmail = asyncHandler(async (req, res) => {
+  console.log(colors.cyan("Verifying email"))
+
+  const { code, email } = req.body;
+
+  try {
+
+    const result = await verifyEmailCode(email, code);
+
+    if (!result.success) {
+      console.log(colors.red("Error verifying email: ", result.message))
+      return res.status(400).json({
+        success: result.success,
+        message: result.message
+      });
+    }
+
+    res.json(result);
+  } catch (error) {
+    throw error
+  }
+});
 
 // @desc    Register a new user
 // @route   POST /api/auth/register
@@ -58,93 +114,24 @@ export const login = asyncHandler(async (req, res) => {
   });
 });
 
-// @desc    Refresh Token
-// @route   POST /api/auth/refresh-token
-// @access  Public
 export const refreshAccessToken = async (req, res) => {
-  const refreshToken = req.cookies.refreshToken;
+  try {
+    logger.info("Refresh token endpoint hit...");
 
-  const result = await refreshAccessTokenService(refreshToken);
+    const { refreshToken } = req.cookies;
+    if (!refreshToken) {
+      return res.status(400).json({ success: false, message: "Refresh token missing" });
+    }
 
-  if (!result.success) {
-    return res.status(result.status).json({ message: result.message });
+    const result = await refreshAccessTokenService(refreshToken, res);
+    
+    return res.status(200).json(result);
+  } catch (error) {
+    logger.error("Refresh token error occurred", error);
+    return res.status(500).json({ success: false, message: "Internal server error" });
   }
-
-  // Update refresh token in cookies
-  res.cookie("refreshToken", result.newRefreshToken, {
-    httpOnly: true,
-    secure: process.env.NODE_ENV !== "development",
-    sameSite: "none",
-    maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
-  });
-
-  // console.log(colors.blue("New Access and Refresh tokens successfully generated"));
-
-  res.status(200).json({
-    success: true,
-    message: "New tokens successfully generated",
-    data: {
-      accessToken: result.accessToken,
-    },
-  });
 };
 
-// @desc    Request verification code
-// @route   POST /api/auth/verify-email/request-code
-// @access  Public
-export const requestEmailVerification = asyncHandler(async (req, res, next) => {
-  console.log(colors.cyan("Requesting email verification code"));
-  
-  try {
-    // const userId = req.user.id;
-    const { email } = req.body;
-
-    const result = await requestVerificationCode(email);
-
-    if(!result.success) {
-      console.log("Error sending verirfction code")
-      res.status(500).json({
-        success: result.success,
-        message: result.message
-      })
-    }
-
-    res.status(200).json({ 
-      success: true, 
-      message: "Verification code sent"
-     });
-  } catch (error) {
-    next(error); // Pass error to the global error handler
-  }
-});
-
-// 
-// 
-// 
-export const verifyEmail = asyncHandler(async (req, res) => {
-  console.log(colors.cyan("Verifying email"))
-
-  const { code, email } = req.body;
-
-  try {
-
-    const result = await verifyEmailCode(email, code);
-
-    if (!result.success) {
-      console.log(colors.red("Error verifying email: ", result.message))
-      return res.status(400).json({
-        success: result.success,
-        message: result.message
-      });
-    }
-
-    res.json(result);
-  } catch (error) {
-    throw error
-  }
-});
-
-// 
 // 
 export const resetPassword = asyncHandler(async (req, res, next) => {
   console.log(colors.cyan("🔄 User reset password endpoint"));

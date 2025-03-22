@@ -5,3 +5,15 @@
 {"level":"error","message":"\u001b[31mFrom API-Gateway, Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-20T16:04:21.983Z"}
 {"level":"error","message":"Proxy error: getaddrinfo ENOTFOUND http","service":"identity-service","timestamp":"2025-03-20T16:10:49.111Z"}
 {"level":"error","message":"Proxy error: ","service":"identity-service","timestamp":"2025-03-21T14:52:06.044Z"}
+{"level":"error","message":"Proxy error: ","service":"identity-service","timestamp":"2025-03-22T09:49:24.081Z"}
+{"level":"error","message":"Proxy error: ","service":"identity-service","timestamp":"2025-03-22T09:53:41.888Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-22T09:54:26.187Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-22T09:56:00.246Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-22T09:56:46.238Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-22T09:57:14.869Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-22T09:58:35.962Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-22T10:00:48.823Z"}
+{"level":"error","message":"\u001b[31mProxy error: socket hang up\u001b[39m","service":"identity-service","timestamp":"2025-03-22T10:22:34.049Z"}
+{"level":"error","message":"\u001b[31mProxy error: socket hang up\u001b[39m","service":"identity-service","timestamp":"2025-03-22T10:27:51.749Z"}
+{"level":"error","message":"\u001b[31mProxy error: socket hang up\u001b[39m","service":"identity-service","timestamp":"2025-03-22T10:40:31.457Z"}
+{"level":"error","message":"\u001b[31mFrom API-Gateway, Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-22T11:30:48.397Z"}

@@ -7,6 +7,8 @@ import jwt from "jsonwebtoken";
 import VerificationCode from "../models/verificationCode.model.js";
 import crypto from "crypto";
 import { sendOTPByEmail, sendWelcomeEmail } from "../mailers/send-emails.js";
+import RefreshToken from "../models/refreshToken.model.js";
+import logger from "../common/utils/logger.js";
 
 // Request email verification code 
 export const requestVerificationCode = async (email) => {
@@ -150,37 +152,41 @@ export const loginUserService = async (req, res, { email, password }) => {
     const user = await User.findOne({ email });
     if (!user) {
       console.log(colors.red(`⚠️ User not found: ${email}`));
-      return {
-        success: false,
-        message: "Invalid email or password",
-      };
+      return { success: false, message: "Invalid email or password" };
     }
 
     // Compare passwords
     const isPasswordCorrect = await user.matchPassword(password);
-    // console.log(`Password comparison result: ${isPasswordCorrect}`);
     if (!isPasswordCorrect) {
       console.log(colors.red(`⚠️ Invalid password attempt for: ${email}`));
-      return {
-        success: false,
-        message: "Invalid email or password",
-      };
+      return { success: false, message: "Invalid email or password" };
     }
 
     console.log(colors.green(`✅ User logged in: ${user.email}`));
 
+    // Generate tokens
     const { accessToken, refreshToken } = generateTokens(res, user._id);
 
     try {
-      const save_refresh_token = await User.findByIdAndUpdate(user._id, { refresh_token: refreshToken });
-      if(!save_refresh_token) {
-        return console.log("Errror saving refresh token")
-      }
+      // Delete any existing refresh token for the user (optional, for security)
+      await RefreshToken.deleteOne({ user: user._id });
+
+      // Save new refresh token
+      const expirationTime = Number(process.env.USER_REFRESH_TOKEN_EXPIRATION_TIME) || 86400; // Default to 1 day
+
+      const newRefreshToken = new RefreshToken({
+        token: refreshToken,
+        user: user._id,
+        expiresAt: new Date(Date.now() + expirationTime * 1000), // Convert to ms
+      });
+
+      await newRefreshToken.save();
       console.log(colors.green("✅ Refresh token saved to database"));
     } catch (error) {
-      console.log(colors.red("❌ Error saving refresh_token to db"), error);
+      console.log(colors.red("❌ Error saving refresh token to DB"), error);
     }
 
+    // Store user details in Redis (without refresh token)
     await redisClient.setEx(
       `user:${user._id}`,
       3600, // Expiry time in seconds (1 hour)
@@ -189,7 +195,6 @@ export const loginUserService = async (req, res, { email, password }) => {
         first_name: user.first_name,
         last_name: user.last_name,
         email: user.email,
-        refresh_token: refreshToken,
         phone_number: user.phone_number,
         address: user.address,
         gender: user.gender,
@@ -204,6 +209,7 @@ export const loginUserService = async (req, res, { email, password }) => {
       success: true,
       message: "Login successful",
       accessToken,
+      refreshToken,
       data: {
         id: user._id,
         first_name: user.first_name,
@@ -220,43 +226,48 @@ export const loginUserService = async (req, res, { email, password }) => {
     };
   } catch (error) {
     console.error(colors.red(`❌ Error in loginUser: ${error.message}`));
-    return {
-      success: false,
-      message: "An error occurred while logging in",
-    };
+    return { success: false, message: "An error occurred while logging in" };
   }
 };
 
-export const refreshAccessTokenService = async (refreshToken) => {
+export const refreshAccessTokenService = async (refreshToken, res) => {
   try {
     if (!refreshToken) {
-      console.log(colors.red("No refresh token supplied"));
+      logger.warn(colors.red("No refresh token supplied"));
       return { success: false, status: 403, message: "No refresh token" };
     }
 
-    const decoded = jwt.verify(refreshToken, process.env.JWT_SECRET);
-    const user = await User.findOne({ refresh_token: refreshToken });
+    // Find refresh token in the database
+    const storedToken = await RefreshToken.findOne({ token: refreshToken }).populate("user");
 
-    if (!user) {
-      console.log(colors.red("Invalid or expired refresh token"));
+    if (!storedToken || !storedToken.user) {
+      logger.warn(colors.red("Invalid or expired refresh token"));
       return { success: false, status: 403, message: "Invalid refresh token" };
-    }
+    } 
 
-    // Generate new tokens
-    const newAccessToken = jwt.sign({ userId: decoded.userId }, process.env.JWT_SECRET, {
-      expiresIn: process.env.USER_ACCESS_TOKEN_EXPIRATION_TIME,
+    // Generate new tokens (without `res`)
+    const { accessToken, refreshToken: newRefreshToken } = generateTokens(res, storedToken.user._id);
+    
+    // Replace old refresh token with the new one
+    await RefreshToken.deleteOne({ token: refreshToken });
+
+    const newRefreshTokenDoc = new RefreshToken({
+      token: newRefreshToken,
+      user: storedToken.user._id,
+      expiresAt: new Date(Date.now() + process.env.USER_REFRESH_TOKEN_EXPIRATION_TIME * 1000),
     });
 
-    const newRefreshToken = jwt.sign({ userId: decoded.userId }, process.env.JWT_SECRET, {
-      expiresIn: process.env.USER_REFRESH_TOKEN_EXPIRATION_TIME,
-    });
+    await newRefreshTokenDoc.save();
 
-    // Save new refresh token to DB
-    await User.findByIdAndUpdate(user._id, { refresh_token: newRefreshToken });
+    logger.info(colors.green("✅ Access token refreshed successfully"));
 
-    return { success: true, accessToken: newAccessToken, newRefreshToken };
+    return { 
+      success: true, 
+      message: "Access token refreshed successfully", 
+      accessToken
+    };
   } catch (error) {
-    console.error(`❌ Refresh token error: ${error.message}`);
+    logger.warn(colors.red(`❌ Refresh token error: ${error.message}`));
     return { success: false, status: 500, message: "Internal server error" };
   }
 };
