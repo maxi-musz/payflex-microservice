@@ -8,6 +8,9 @@ import rateLimiterMiddleware from "./config/rateLimiter.js";
 import logger from "./common/utils/logger.js";
 import asyncHandler from "./middlewares/asyncHandler.js";
 
+// routes
+import bankingRoutes from "./routes/banking.route.js"
+
 dotenv.config()
 
 const app = express()
@@ -29,16 +32,28 @@ app.use(
   })
 );
 
+app.use("/api/v1/banking", bankingRoutes)
+
 app.get(
   "/",
   asyncHandler(async (req, res) => {
-    logger.info(colors.magenta("User Service Payflex microservice API is running"));
-    res.status(200).json({ message: "User Service Payflex microservice API is running" });
+    logger.info(colors.magenta("Banking Service Payflex microservice API is running"));
+    res.status(200).json({ message: "Banking Service Payflex microservice API is running" });
   })
 );
 
+// Catch-all route for unknown endpoints
+app.use(
+  "*",
+  asyncHandler(async (req, res) => {
+    logger.error(colors.red("Banking Service: Route not found"));
+    res.status(404).json({ success: false, message: "Banking Service Route not found" });
+  })
+);
+
+
 app.listen(PORT, async () => {
-    logger.info(colors.yellow(`users service running on port ${PORT}`));
+    logger.info(colors.yellow(`Banking service: running on port ${PORT}`));
 });
 
 // unhandled promise rejection

@@ -2,3 +2,4 @@
 {"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","level":"error","message":"Unhandled Rejection at","service":"identity-service","timestamp":"2025-03-21T16:32:27.468Z"}
 {"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","level":"error","message":"Unhandled Rejection at","service":"identity-service","timestamp":"2025-03-21T16:32:33.118Z"}
 {"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","level":"error","message":"Unhandled Rejection at","service":"identity-service","timestamp":"2025-03-21T16:32:38.497Z"}
+{"level":"error","message":"\u001b[31mBanking Service Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-22T12:48:07.029Z"}

@@ -1,6 +1,13 @@
 import express from "express";
 import validateRequest from "../middlewares/validateRequest.js";
-import { login, refreshAccessToken, register, requestEmailVerification, resetPassword, verifyEmail } from "../controllers/authController.js";
+import { 
+    login, 
+    refreshAccessToken, 
+    register, 
+    requestEmailVerification, 
+    resetPassword, 
+    verifyEmail 
+} from "../controllers/authController.js";
 import {
     registerSchema,
     loginSchema,
@@ -44,7 +51,6 @@ authRoute
 authRoute
 .route("/update-password")
 .post(validateRequest(updatePasswordSchema), resetPassword)
-
 
 
 export default authRoute;

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@prisma/client": "^6.5.0",
     "axios": "^1.8.4",
     "bcrypt": "^5.1.1",
     "bcryptjs": "^3.0.2",
@@ -19,6 +20,8 @@
     "node-redis": "^0.1.7",
     "nodemailer": "^6.10.0",
     "npm": "^11.2.0",
+    "pg": "^8.14.1",
+    "prisma": "^6.5.0",
     "rate-limit-redis": "^4.2.0",
     "rate-limiter-flexible": "^6.1.0",
     "redis": "^4.7.0",

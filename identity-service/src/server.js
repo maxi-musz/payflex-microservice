@@ -66,7 +66,6 @@ app.use(
 // Database connection with error handling
 (async () => {
   try {
-    await db.connectDb();
     app.listen(PORT, () => {
       logger.info(`Identity service running on port ${PORT}`);
     });

@@ -7,6 +7,7 @@ import logger from "./utils/logger.js";
 import asyncHandler from "./middlewares/asyncHandler.js";
 import colors from "colors";
 import cookieParser from "cookie-parser";
+import protect from "./middlewares/authMiddleware.js"
 
 dotenv.config();
 
@@ -21,7 +22,7 @@ app.use(cookieParser()); // ✅ Ensure cookie parsing is enabled
 const rateLimiter = new RateLimiterRedis({
   storeClient: redisClient,
   keyPrefix: "gateway",
-  points: 100, // Allow 100 requests
+  points: 25, // Allow 100 requests
   duration: 60, // per 60 seconds (1 min)
 });
 
@@ -30,7 +31,7 @@ app.use(async (req, res, next) => {
   try {
     const rateLimitRes = await rateLimiter.consume(req.ip);
     console.log(
-      `Request allowed. Remaining: ${rateLimitRes.remainingPoints}, Reset in: ${rateLimitRes.msBeforeNext}ms`
+      colors.blue(`Request allowed. Remaining: ${rateLimitRes.remainingPoints}, Reset in: ${rateLimitRes.msBeforeNext}ms`)
     );
     next();
   } catch (rateLimitError) {
@@ -57,7 +58,10 @@ const proxyOptions = {
   },
   proxyErrorHandler: (err, req, res) => {
     logger.error(colors.red(`Proxy error: ${err.message}`));
-    res.status(500).json({ message: "Internal server error", error: err.message });
+
+    // Use `res.writeHead()` instead of `res.status()`
+    res.writeHead(500, { "Content-Type": "application/json" });
+    res.end(JSON.stringify({ message: "Internal server error", error: err.message }));
   },
 };
 
@@ -77,12 +81,46 @@ app.use(
       return proxyReqOpts;
     },
     userResHeaderDecorator: (headers, userReq, userRes, proxyReq, proxyRes) => {
-      // ✅ Allow cookies from Identity Service to be returned to the client
+      // ✅ Allow cookies from Banking Service to be returned to the client
       headers["Access-Control-Allow-Credentials"] = "true";
       return headers;
     },
     userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
-      logger.info(`Response received from Identity service: ${proxyRes.statusCode}`);
+      logger.info(colors.magenta(`Response received from Identity service: ${proxyRes.statusCode}`));
+      
+      try {
+        const data = JSON.parse(proxyResData.toString("utf-8"));
+        return JSON.stringify(data);
+      } catch (err) {
+        logger.error("Error parsing proxy response:", err);
+        return proxyResData;
+      }
+    },
+  })
+);
+
+// ✅ Fixed Proxy Middleware for Identity Service
+app.use(
+  "/api/v1/banking",
+  proxy(process.env.BANKING_SERVICE_URL, {
+    ...proxyOptions,
+    proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
+      proxyReqOpts.headers["Content-Type"] = "application/json";
+      
+      // ✅ Forward cookies to identity service
+      if (srcReq.headers.cookie) {
+        proxyReqOpts.headers["cookie"] = srcReq.headers.cookie;
+      }
+
+      return proxyReqOpts;
+    },
+    userResHeaderDecorator: (headers, userReq, userRes, proxyReq, proxyRes) => {
+      // ✅ Allow cookies from Banking Service to be returned to the client
+      headers["Access-Control-Allow-Credentials"] = "true";
+      return headers;
+    },
+    userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
+      logger.info(colors.grey(`Response received from Banking service: ${proxyRes.statusCode}`));
       
       try {
         const data = JSON.parse(proxyResData.toString("utf-8"));

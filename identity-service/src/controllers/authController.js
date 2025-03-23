@@ -1,16 +1,18 @@
 
 import { getEnv } from "../common/utils/get-env.js";
 import asyncHandler from "../middlewares/asyncHandler.js";
-import {loginUserService, refreshAccessTokenService, registerUserService, requestVerificationCode, resetPasswordService, verifyEmailCode} from "../services/auth-service.js";
+import {
+  loginUserService, 
+  refreshAccessTokenService, 
+  registerUserService, 
+  requestVerificationCode, 
+  resetPasswordService, 
+  verifyEmailCode
+} from "../services/auth-service.js";
 import jwt from "jsonwebtoken";
 
 import colors from "colors";
-import { verificationEmailSchema } from "../common/validators/auth.validator.js";
-import User from "../models/user.model.js";
-import VerificationCode from "../models/verificationCode.model.js";
-import RefreshToken from "../models/refreshToken.model.js";
 import logger from "../common/utils/logger.js";
-import generateTokens from "../common/utils/generate-token.js";
 
 // @desc    Request verification code
 // @route   POST /api/auth/verify-email/request-code
@@ -25,23 +27,25 @@ export const requestEmailVerification = asyncHandler(async (req, res, next) => {
     const result = await requestVerificationCode(email);
 
     if(!result.success) {
-      console.log("Error sending verirfction code")
       res.status(500).json({
         success: result.success,
-        message: result.message
+        message: result.message,
+        
       })
     }
 
+    
     res.status(200).json({ 
       success: true, 
-      message: "Verification code sent"
+      message: "Verification code sent",
+      data: result.data
      });
   } catch (error) {
     next(error); // Pass error to the global error handler
   }
 });
 
-// 
+// // 
 export const verifyEmail = asyncHandler(async (req, res) => {
   console.log(colors.cyan("Verifying email"))
 
@@ -65,9 +69,9 @@ export const verifyEmail = asyncHandler(async (req, res) => {
   }
 });
 
-// @desc    Register a new user
-// @route   POST /api/auth/register
-// @access  Public
+// // @desc    Register a new user
+// // @route   POST /api/auth/register
+// // @access  Public
 export const register = asyncHandler(async (req, res) => {
   console.log(colors.yellow("📌 Registering a new user"));
 
@@ -79,22 +83,23 @@ export const register = asyncHandler(async (req, res) => {
   }
 
   const formattedUser = {
-    id: newUser._id,
-    name: newUser.name,
+    id: newUser.id,  // Correct field name
+    name: `${newUser.first_name} ${newUser.last_name}`, 
     email: newUser.email,
-    role: newUser.role, // Now should be correctly returned
+    role: newUser.role,
+    address: newUser.address, 
   };
 
   res.status(201).json({
     success: true,
     message: "User registered successfully",
-    data: newUser.data,
+    data: formattedUser,
   });
 });
 
-// @desc    login user
-// @route   POST /api/auth/login
-// @access  Public
+// // @desc    login user
+// // @route   POST /api/auth/login
+// // @access  Public
 export const login = asyncHandler(async (req, res) => {
   console.log(colors.yellow("🔑 User login endpoint called"));
 
@@ -132,7 +137,7 @@ export const refreshAccessToken = async (req, res) => {
   }
 };
 
-// 
+//
 export const resetPassword = asyncHandler(async (req, res, next) => {
   console.log(colors.cyan("🔄 User reset password endpoint"));
 
@@ -157,3 +162,4 @@ export const resetPassword = asyncHandler(async (req, res, next) => {
     next(error);
   }
 });
+
