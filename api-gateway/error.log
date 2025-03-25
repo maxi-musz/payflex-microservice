@@ -54,3 +54,4 @@
 {"body":"<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>ReferenceError: colors is not defined<br> &nbsp; &nbsp;at file:///Users/macbook/Desktop/payflex%","level":"error","message":"Error parsing proxy response: Response is not JSON","service":"identity-service","statusCode":500,"timestamp":"2025-03-24T14:52:00.766Z"}
 {"level":"error","message":"\u001b[31mFrom API-Gateway, Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-24T15:58:13.838Z"}
 {"level":"error","message":"\u001b[31mFrom API-Gateway, Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-25T15:27:32.603Z"}
+{"level":"error","message":"\u001b[31mFrom API-Gateway, Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-25T16:11:46.994Z"}

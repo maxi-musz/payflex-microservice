@@ -7,6 +7,7 @@ import logger from "./utils/logger.js";
 import asyncHandler from "./middlewares/asyncHandler.js";
 import colors from "colors";
 import cookieParser from "cookie-parser";
+import { verifyToken } from "./middlewares/authMiddleware.js";
 
 dotenv.config();
 
@@ -66,7 +67,7 @@ const proxyOptions = {
 
 // ✅ Fixed Proxy Middleware for Identity Service
 app.use(
-  ["/api/v1/auth", "/api/v1/users"],
+  "/api/v1/auth",
   proxy(process.env.IDENTITY_SERVICE_URL, {
     ...proxyOptions,
     proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
@@ -95,6 +96,89 @@ app.use(
         return proxyResData;
       }
     },
+  })
+);
+
+// ✅ Fixed Proxy Middleware for Identity Service
+app.use(
+  "/api/v1/users",
+  proxy(process.env.IDENTITY_SERVICE_URL, {
+    ...proxyOptions,
+    proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
+      proxyReqOpts.headers["Content-Type"] = "application/json";
+      
+      // ✅ Forward cookies to identity service
+      if (srcReq.headers.cookie) {
+        proxyReqOpts.headers["cookie"] = srcReq.headers.cookie;
+      }
+
+      return proxyReqOpts;
+    },
+    userResHeaderDecorator: (headers, userReq, userRes, proxyReq, proxyRes) => {
+      // ✅ Allow cookies from Banking Service to be returned to the client
+      headers["Access-Control-Allow-Credentials"] = "true";
+      return headers;
+    },
+    userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
+      logger.info(colors.magenta(`Response received from Identity service: ${proxyRes.statusCode}`));
+      
+      try {
+        const data = JSON.parse(proxyResData.toString("utf-8"));
+        return JSON.stringify(data);
+      } catch (err) {
+        logger.error("Error parsing proxy response:", err);
+        return proxyResData;
+      }
+    },
+  })
+);
+
+// ✅ Fixed Proxy Middleware for Transaction hisory Service
+app.use(
+  "/api/v1/history",
+  proxy(process.env.TRANSACTION_HISTORY_SERVICE_URL, {
+    ...proxyOptions,
+    proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
+      proxyReqOpts.headers["Content-Type"] = "application/json";
+      
+      // ✅ Forward cookies to identity service
+      if (srcReq.headers.cookie) {
+        proxyReqOpts.headers["cookie"] = srcReq.headers.cookie;
+      }
+
+      // ✅ Forward Authorization header
+      if (srcReq.headers.authorization) {
+        proxyReqOpts.headers["Authorization"] = srcReq.headers.authorization;
+      }
+
+      return proxyReqOpts;
+    },
+    userResHeaderDecorator: (headers, userReq, userRes, proxyReq, proxyRes) => {
+      // ✅ Allow cookies from Banking Service to be returned to the client
+      headers["Access-Control-Allow-Credentials"] = "true";
+      return headers;
+    },
+    userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
+      logger.info(colors.magenta(`Response received from Trans-History service: ${proxyRes.statusCode}`));
+    
+      try {
+        const data = JSON.parse(proxyResData.toString("utf-8"));
+        return JSON.stringify(data);
+      } catch (err) {
+        logger.error("Error parsing proxy response: Response is not JSON", {
+          statusCode: proxyRes.statusCode,
+          body: proxyResData.toString("utf-8").slice(0, 200), // Log first 200 chars
+        });
+    
+        // Return a generic error response instead of crashing
+        return JSON.stringify({
+          success: false,
+          message: "Unexpected response format from service",
+          statusCode: proxyRes.statusCode,
+        });
+      }
+    }
+    ,
   })
 );
 
@@ -129,50 +213,6 @@ app.use(
         return proxyResData;
       }
     },
-  })
-);
-
-// ✅ Fixed Proxy Middleware for Transaction hisory Service
-app.use(
-  "/api/v1/history",
-  proxy(process.env.TRANSACTION_HISTORY_SERVICE_URL, {
-    ...proxyOptions,
-    proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
-      proxyReqOpts.headers["Content-Type"] = "application/json";
-      
-      // ✅ Forward cookies to identity service
-      if (srcReq.headers.cookie) {
-        proxyReqOpts.headers["cookie"] = srcReq.headers.cookie;
-      }
-
-      return proxyReqOpts;
-    },
-    userResHeaderDecorator: (headers, userReq, userRes, proxyReq, proxyRes) => {
-      // ✅ Allow cookies from Banking Service to be returned to the client
-      headers["Access-Control-Allow-Credentials"] = "true";
-      return headers;
-    },
-    userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
-      logger.info(colors.magenta(`Response received from Trans-History service: ${proxyRes.statusCode}`));
-    
-      try {
-        const data = JSON.parse(proxyResData.toString("utf-8"));
-        return JSON.stringify(data);
-      } catch (err) {
-        logger.error("Error parsing proxy response: Response is not JSON", {
-          statusCode: proxyRes.statusCode,
-          body: proxyResData.toString("utf-8").slice(0, 200), // Log first 200 chars
-        });
-    
-        // Return a generic error response instead of crashing
-        return JSON.stringify({
-          success: false,
-          message: "Unexpected response format from service",
-          statusCode: proxyRes.statusCode,
-        });
-      }
-    }
-    ,
   })
 );
 

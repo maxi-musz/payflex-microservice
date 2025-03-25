@@ -58,8 +58,8 @@ app.use(errorHandler);
 app.use(
   "*",
   asyncHandler(async (req, res) => {
-    logger.error(colors.red("From Identity Service: Route not found"));
-    res.status(404).json({ success: false, message: "Route not found" });
+    logger.error(colors.red("(C-Log)Identity Service: Route not found"));
+    res.status(404).json({ success: false, message: "(C-Log) Route not found" });
   })
 );
 

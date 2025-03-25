@@ -12,7 +12,8 @@ userRoutes
 .get(protect, getUserDashboard);
 
 userRoutes
-.route("/get-current-user/:id")
+.route("/get-current-user")
 .get(protect, getCurrentUser)
 
 export default userRoutes;
+ 
