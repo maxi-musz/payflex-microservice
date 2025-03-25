@@ -1,0 +1,184 @@
+{"level":"info","message":"\u001b[33musers service running on port 4003\u001b[39m","service":"transaction-history-service","timestamp":"2025-03-24T13:57:15.042Z"}
+{"level":"info","message":"\u001b[33musers service running on port 4003\u001b[39m","service":"transaction-history-service","timestamp":"2025-03-24T14:17:22.601Z"}
+{"level":"info","message":"\u001b[33musers service running on port 4003\u001b[39m","service":"transaction-history-service","timestamp":"2025-03-24T14:17:25.388Z"}
+{"level":"info","message":"\u001b[33musers service running on port 4003\u001b[39m","service":"transaction-history-service","timestamp":"2025-03-24T14:17:31.829Z"}
+{"level":"info","message":"\u001b[33musers service running on port 4003\u001b[39m","service":"transaction-history-service","timestamp":"2025-03-24T14:17:50.353Z"}
+{"level":"info","message":"\u001b[33musers service running on port 4003\u001b[39m","service":"transaction-history-service","timestamp":"2025-03-24T14:17:52.068Z"}
+{"level":"info","message":"\u001b[33musers service running on port 4003\u001b[39m","service":"transaction-history-service","timestamp":"2025-03-24T14:18:02.646Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4003\u001b[39m","service":"transaction-history-service","timestamp":"2025-03-24T14:18:10.525Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4003\u001b[39m","service":"history-service","timestamp":"2025-03-24T14:38:03.144Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4003\u001b[39m","service":"history-service","timestamp":"2025-03-24T14:38:23.839Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T14:41:21.884Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T14:41:28.662Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T14:51:25.772Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T14:51:29.397Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T14:51:54.466Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T14:52:50.001Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-24T14:53:35.093Z"}
+{"level":"error","message":"\u001b[31mError retrieving user transactions\u001b[39m","service":"history-service","timestamp":"2025-03-24T14:53:35.095Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T14:54:13.692Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-24T14:54:33.396Z"}
+{"level":"error","message":"\u001b[31mError retrieving user transactions\u001b[39m","service":"history-service","timestamp":"2025-03-24T14:54:33.398Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:00:31.910Z"}
+{"level":"error","message":"\u001b[31mError retrieving user transactions\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:00:31.911Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:01:41.720Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:02:39.437Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:02:52.637Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:03:06.288Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:03:11.064Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:03:14.142Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:03:15.267Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:03:16.350Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:03:20.644Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:03:34.773Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:03:36.683Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:03:40.924Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:03:44.078Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:03:50.377Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:03:55.291Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:03:59.385Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:04:05.360Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:06:17.263Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:06:38.812Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:06:43.776Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:06:46.859Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:06:53.492Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:06:55.573Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:07:02.827Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:07:08.824Z"}
+{"level":"error","message":"User does not exist","service":"history-service","timestamp":"2025-03-24T15:07:08.825Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:09:05.123Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:09:10.330Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:09:19.398Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:09:23.370Z"}
+{"level":"error","message":"User does not exist","service":"history-service","timestamp":"2025-03-24T15:09:23.371Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:29:32.647Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:30:27.230Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:32:34.229Z"}
+{"level":"error","message":"User does not exist","service":"history-service","timestamp":"2025-03-24T15:32:34.230Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:33:00.642Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:33:05.185Z"}
+{"level":"info","message":"\u001b[35mNo transaction history available at the moment\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:33:05.202Z"}
+{"level":"info","message":"\u001b[35mTotal of 0 transactions retrieved\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:33:05.205Z"}
+{"level":"error","message":"\u001b[31mError retrieving user transactions\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:33:05.206Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:35:19.461Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:37:00.661Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:37:17.631Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:37:37.916Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:39:11.717Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:44:49.968Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:47:40.041Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:47:48.104Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:47:53.423Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:48:42.361Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:48:43.960Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T15:48:50.761Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:14:50.682Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:14:54.868Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:15:02.156Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:15:06.258Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:15:08.680Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:15:10.710Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:15:19.775Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:15:27.013Z"}
+{"level":"info","message":"\u001b[35mNo transaction history available at the moment\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:15:27.047Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:16:38.610Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:16:44.588Z"}
+{"level":"info","message":"\u001b[35mNo transaction history available at the moment\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:16:44.596Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:17:34.575Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:17:40.178Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:17:44.951Z"}
+{"level":"info","message":"\u001b[35mNo transaction history available at the moment\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:17:44.958Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:18:16.011Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:19:14.433Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:19:22.143Z"}
+{"level":"info","message":"\u001b[35mNo transaction history available at the moment\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:19:22.150Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:20:12.412Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:20:14.263Z"}
+{"level":"info","message":"\u001b[35mNo transaction history available at the moment\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:20:14.272Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:27:42.314Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:27:53.599Z"}
+{"level":"info","message":"\u001b[35mNo transaction history available at the moment\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:27:53.607Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:28:19.122Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:28:26.722Z"}
+{"level":"info","message":"\u001b[35mNo transaction history available at the moment\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:28:26.729Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:38:04.618Z"}
+{"level":"info","message":"\u001b[35mTotal of 4 transactions retrieved\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:38:04.635Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:40:27.457Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:41:33.721Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:42:20.086Z"}
+{"level":"info","message":"\u001b[35mTotal of 4 transactions retrieved\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:42:20.094Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:43:53.784Z"}
+{"level":"info","message":"\u001b[35mTotal of 4 transactions retrieved\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:43:53.786Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:53:31.627Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:53:32.674Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:53:43.465Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:53:47.020Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:53:52.553Z"}
+{"level":"info","message":"\u001b[35mTotal of 4 transactions retrieved\u001b[39m","service":"history-service","timestamp":"2025-03-24T16:53:52.564Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:02:33.266Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:02:40.095Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:02:46.750Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:02:55.529Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:02:59.518Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:05:23.163Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:06:00.758Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:11:41.162Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:32:01.432Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:32:06.839Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:32:09.724Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:32:25.297Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:32:27.779Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:32:34.355Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:33:24.958Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:33:28.257Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:33:32.768Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:34:16.845Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:36:51.514Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:37:10.345Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:37:28.358Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:37:35.316Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:38:06.305Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:38:09.071Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:38:26.760Z"}
+{"level":"info","message":"\u001b[35mTotal of 4 transactions retrieved\u001b[39m","service":"history-service","timestamp":"2025-03-24T17:38:26.770Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-25T07:42:19.652Z"}
+{"level":"info","message":"\u001b[35mTotal of 4 transactions retrieved\u001b[39m","service":"history-service","timestamp":"2025-03-25T07:42:19.663Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T08:55:44.715Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T09:49:55.374Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T09:49:56.681Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T09:49:59.091Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-25T09:50:09.532Z"}
+{"level":"info","message":"\u001b[35mNo transaction history available at the moment\u001b[39m","service":"history-service","timestamp":"2025-03-25T09:50:09.539Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-25T09:51:21.256Z"}
+{"level":"info","message":"\u001b[35mTotal of 2 transactions retrieved\u001b[39m","service":"history-service","timestamp":"2025-03-25T09:51:21.261Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T09:53:46.629Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T09:53:49.976Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-25T09:55:18.762Z"}
+{"level":"info","message":"\u001b[35mNo transaction history available at the moment\u001b[39m","service":"history-service","timestamp":"2025-03-25T09:55:18.770Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T09:55:32.388Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T09:55:39.719Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-25T10:02:58.426Z"}
+{"level":"info","message":"\u001b[35mTotal of 2 transactions retrieved\u001b[39m","service":"history-service","timestamp":"2025-03-25T10:02:58.441Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T13:55:59.740Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T13:56:42.809Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:36:59.516Z"}
+{"level":"error","message":"\u001b[31mError retrieving user transactions\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:36:59.531Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:37:44.725Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:38:21.215Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:38:29.993Z"}
+{"level":"error","message":"\u001b[31mError retrieving user transactions\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:38:30.002Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:39:33.981Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:39:48.151Z"}
+{"level":"error","message":"\u001b[31mError retrieving user transactions PrismaClientValidationError: \u001b[39m\n\u001b[31mInvalid `prisma.transactionHistory.findMany()` invocation:\u001b[39m\n\n\u001b[31m{\u001b[39m\n\u001b[31m  where: {\u001b[39m\n\u001b[31m    user_id: \"35a5d9f7-159a-4b3a-a480-c35571ddee54\"\u001b[39m\n\u001b[31m  },\u001b[39m\n\u001b[31m  include: {\u001b[39m\n\u001b[31m    service_profile_image: true,\u001b[39m\n\u001b[31m    ~~~~~~~~~~~~~~~~~~~~~\u001b[39m\n\u001b[31m    sender_details: true,\u001b[39m\n\u001b[31m?   icon?: true\u001b[39m\n\u001b[31m  }\u001b[39m\n\u001b[31m}\u001b[39m\n\n\u001b[31mUnknown field `service_profile_image` for include statement on model `TransactionHistory`. Available options are marked with ?.\u001b[39m\n\u001b[31m    at Cn (/Users/macbook/Desktop/payflex microservice/transaction-history-service/node_modules/@prisma/client/runtime/library.js:29:1363)\u001b[39m\n\u001b[31m    at Wn.handleRequestError (/Users/macbook/Desktop/payflex microservice/transaction-history-service/node_modules/@prisma/client/runtime/library.js:121:7177)\u001b[39m\n\u001b[31m    at Wn.handleAndLogRequestError (/Users/macbook/Desktop/payflex microservice/transaction-history-service/node_modules/@prisma/client/runtime/library.js:121:6858)\u001b[39m\n\u001b[31m    at Wn.request (/Users/macbook/Desktop/payflex microservice/transaction-history-service/node_modules/@prisma/client/runtime/library.js:121:6565)\u001b[39m\n\u001b[31m    at async l (/Users/macbook/Desktop/payflex microservice/transaction-history-service/node_modules/@prisma/client/runtime/library.js:130:10067)\u001b[39m\n\u001b[31m    at async file:///Users/macbook/Desktop/payflex%20microservice/transaction-history-service/src/controllers/trans-histories.ctrl.js:22:38 {\u001b[39m\n\u001b[31m  clientVersion: '6.5.0'\u001b[39m\n\u001b[31m}\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:39:48.161Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:41:07.838Z"}
+{"level":"info","message":"\u001b[36mgetting user transaction history\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:41:37.935Z"}
+{"level":"info","message":"\u001b[35mTotal of 2 transactions retrieved\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:41:37.947Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:50:57.926Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:52:40.130Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:53:13.836Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:54:09.209Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:54:14.171Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:54:22.408Z"}
+{"level":"info","message":"\u001b[36mGetting single transaction by ID\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:56:23.573Z"}
+{"level":"info","message":"\u001b[35mTransaction with ID a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11 retrieved\u001b[39m","service":"history-service","timestamp":"2025-03-25T14:56:23.583Z"}

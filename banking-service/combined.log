@@ -45,3 +45,10 @@
 {"level":"info","message":"\u001b[36m📌 Fetching user accounts...\u001b[39m","service":"identity-service","timestamp":"2025-03-22T21:08:12.567Z"}
 {"level":"warn","message":"\u001b[33m⚠️ User ID not found in request\u001b[39m","service":"identity-service","timestamp":"2025-03-22T21:08:12.568Z"}
 {"level":"info","message":"\u001b[33mBanking service: running on port 4002\u001b[39m","service":"identity-service","timestamp":"2025-03-22T21:12:17.103Z"}
+{"level":"info","message":"\u001b[33mBanking service: running on port 4002\u001b[39m","service":"identity-service","timestamp":"2025-03-24T08:04:30.782Z"}
+{"level":"info","message":"\u001b[33mBanking service: running on port 4002\u001b[39m","service":"banking-service","timestamp":"2025-03-24T08:06:48.458Z"}
+{"level":"info","message":"\u001b[33mBanking service: running on port 4002\u001b[39m","service":"banking-service","timestamp":"2025-03-24T08:08:00.271Z"}
+{"level":"info","message":"\u001b[33mBanking service: running on port 4002\u001b[39m","service":"banking-service","timestamp":"2025-03-24T08:40:32.644Z"}
+{"level":"info","message":"\u001b[33mBanking service: running on port 4002\u001b[39m","service":"banking-service","timestamp":"2025-03-24T08:41:03.501Z"}
+{"level":"info","message":"\u001b[33mBanking service: running on port 4002\u001b[39m","service":"banking-service","timestamp":"2025-03-24T08:50:01.012Z"}
+{"level":"info","message":"\u001b[33mBanking service: running on port 4002\u001b[39m","service":"banking-service","timestamp":"2025-03-24T09:34:54.863Z"}

@@ -462,3 +462,129 @@
 {"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-03-23T19:55:41.349Z"}
 {"level":"info","message":"\u001b[32m✅ Access token refreshed successfully\u001b[39m","service":"identity-service","timestamp":"2025-03-23T19:55:41.357Z"}
 {"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-23T20:05:00.244Z"}
+{"level":"info","message":"\u001b[35mOTP code: 3903 sent to user: adeyeye.toyorsi@gmail.com\u001b[39m","service":"identity-service","timestamp":"2025-03-23T20:47:04.298Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-23T21:16:25.905Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T14:35:58.314Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-03-24T14:58:25.382Z"}
+{"level":"info","message":"\u001b[32m✅ Access token refreshed successfully\u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:58:25.412Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:20:08.616Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:20:13.288Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:21:36.963Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:21:43.391Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:21:45.763Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:21:49.027Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:21:52.805Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:22:00.147Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:22:06.754Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:22:08.269Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:22:12.246Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:22:13.571Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:22:17.564Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:22:22.573Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:22:25.798Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:22:28.745Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:22:34.760Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:22:48.140Z"}
+{"level":"info","message":"Refresh token endpoint hit...","service":"identity-service","timestamp":"2025-03-24T15:38:07.874Z"}
+{"level":"info","message":"\u001b[32m✅ Access token refreshed successfully\u001b[39m","service":"identity-service","timestamp":"2025-03-24T15:38:07.896Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:49:49.766Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:49:52.930Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:50:00.852Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:50:10.200Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:50:12.983Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:50:16.584Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:50:23.275Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:53:50.389Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:53:59.505Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:54:01.062Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:54:04.900Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:54:07.016Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:54:10.511Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:54:17.344Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:54:21.689Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:54:26.799Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:54:28.700Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:54:31.571Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:54:49.494Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:54:57.219Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:54:59.659Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:55:09.457Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:55:19.284Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:55:23.673Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:55:28.724Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:55:34.621Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:55:37.790Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:55:39.170Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:55:56.079Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:56:02.165Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:56:05.547Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:56:08.270Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:56:16.437Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:56:19.463Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:56:21.072Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:56:23.587Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:56:26.606Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T15:56:28.376Z"}
+{"level":"error","message":"\u001b[31mRoute not found\u001b[39m","service":"identity-service","timestamp":"2025-03-24T15:58:32.145Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:00:25.168Z"}
+{"level":"error","message":"\u001b[31mRoute not found\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:00:31.621Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:04:02.065Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:04:06.846Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:04:09.388Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:04:19.140Z"}
+{"0":"p","1":"r","10":"n","11":"o","12":"t","13":" ","14":"d","15":"e","16":"f","17":"i","18":"n","19":"e","2":"i","20":"d","3":"s","4":"m","5":"a","6":" ","7":"i","8":"s","9":" ","level":"error","message":"Error fetching user details","service":"identity-service","timestamp":"2025-03-24T16:04:23.539Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:05:48.523Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:05:51.702Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:05:55.972Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:05:59.323Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:06:03.538Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:06:06.960Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:06:12.341Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:06:17.861Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:06:19.494Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:06:27.930Z"}
+{"level":"error","message":"\u001b[31mFrom Identity Service: Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:06:31.428Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:09:17.176Z"}
+{"0":"p","1":"r","10":"n","11":"o","12":"t","13":" ","14":"d","15":"e","16":"f","17":"i","18":"n","19":"e","2":"i","20":"d","3":"s","4":"m","5":"a","6":" ","7":"i","8":"s","9":" ","level":"error","message":"Error fetching user details","service":"identity-service","timestamp":"2025-03-24T16:09:34.502Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:10:13.332Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:10:44.624Z"}
+{"0":"p","1":"r","10":"n","11":"o","12":"t","13":" ","14":"d","15":"e","16":"f","17":"i","18":"n","19":"e","2":"i","20":"d","3":"s","4":"m","5":"a","6":" ","7":"i","8":"s","9":" ","level":"error","message":"Error fetching user details","service":"identity-service","timestamp":"2025-03-24T16:10:48.342Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:11:56.110Z"}
+{"0":"p","1":"r","10":"n","11":"o","12":"t","13":" ","14":"d","15":"e","16":"f","17":"i","18":"n","19":"e","2":"i","20":"d","3":"s","4":"m","5":"a","6":" ","7":"i","8":"s","9":" ","level":"error","message":"Error fetching user details","service":"identity-service","timestamp":"2025-03-24T16:12:11.091Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:12:20.196Z"}
+{"level":"error","message":"Error fetching user details prisma is not defined","service":"identity-service","stack":"ReferenceError: prisma is not defined\n    at file:///Users/macbook/Desktop/payflex%20microservice/identity-service/src/controllers/user.controller.js:18:18\n    at file:///Users/macbook/Desktop/payflex%20microservice/identity-service/src/middlewares/asyncHandler.js:2:19\n    at Layer.handle [as handle_request] (/Users/macbook/Desktop/payflex microservice/identity-service/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/macbook/Desktop/payflex microservice/identity-service/node_modules/express/lib/router/route.js:149:13)\n    at protect (file:///Users/macbook/Desktop/payflex%20microservice/identity-service/src/middlewares/authMiddleware.js:40:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-03-24T16:12:25.325Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:12:48.278Z"}
+{"level":"info","message":"\u001b[35mUser successfully retrieved\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:12:52.908Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T16:13:11.846Z"}
+{"level":"error","message":"\u001b[31mFrom Identity Service: Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:18:20.168Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T17:00:50.297Z"}
+{"level":"error","message":"\u001b[31mFrom Identity Service: Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:01:02.627Z"}
+{"level":"error","message":"\u001b[31mFrom Identity Service: Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:03:05.474Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T17:21:03.805Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T17:21:16.127Z"}
+{"level":"info","message":"\u001b[35mUser successfully retrieved\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:21:34.179Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T17:28:55.408Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T17:28:56.844Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T17:29:01.422Z"}
+{"level":"info","message":"\u001b[35mUser successfully retrieved\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:29:12.014Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-24T17:30:07.271Z"}
+{"level":"info","message":"\u001b[35mUser successfully retrieved\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:30:32.890Z"}
+{"level":"info","message":"\u001b[35mUser successfully retrieved\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:32:57.932Z"}
+{"level":"info","message":"\u001b[35mUser successfully retrieved\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:33:40.116Z"}
+{"level":"info","message":"\u001b[35mUser successfully retrieved\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:34:29.777Z"}
+{"level":"info","message":"\u001b[35mUser successfully retrieved\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:38:26.755Z"}
+{"level":"info","message":"\u001b[35mUser successfully retrieved\u001b[39m","service":"identity-service","timestamp":"2025-03-25T07:42:19.650Z"}
+{"level":"info","message":"\u001b[35mUser successfully retrieved\u001b[39m","service":"identity-service","timestamp":"2025-03-25T09:50:09.526Z"}
+{"level":"info","message":"\u001b[35mUser successfully retrieved\u001b[39m","service":"identity-service","timestamp":"2025-03-25T09:51:21.254Z"}
+{"level":"info","message":"\u001b[35mUser successfully retrieved\u001b[39m","service":"identity-service","timestamp":"2025-03-25T09:55:18.757Z"}
+{"level":"info","message":"\u001b[35mUser successfully retrieved\u001b[39m","service":"identity-service","timestamp":"2025-03-25T10:02:58.421Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-25T13:58:29.390Z"}
+{"level":"info","message":"\u001b[35mOTP code: 9553 sent to user: adeyeye.toyorsi@gmail.com\u001b[39m","service":"identity-service","timestamp":"2025-03-25T13:58:45.869Z"}
+{"level":"info","message":"\u001b[35mOTP code: 7594 sent to user: adeyeye.toyorsi@gmail.com\u001b[39m","service":"identity-service","timestamp":"2025-03-25T14:35:03.556Z"}
+{"level":"info","message":"\u001b[35mUser successfully retrieved\u001b[39m","service":"identity-service","timestamp":"2025-03-25T14:36:59.513Z"}
+{"level":"info","message":"\u001b[35mUser successfully retrieved\u001b[39m","service":"identity-service","timestamp":"2025-03-25T14:38:29.988Z"}
+{"level":"info","message":"\u001b[35mUser successfully retrieved\u001b[39m","service":"identity-service","timestamp":"2025-03-25T14:39:48.147Z"}
+{"level":"info","message":"\u001b[35mUser successfully retrieved\u001b[39m","service":"identity-service","timestamp":"2025-03-25T14:41:37.930Z"}
+{"level":"info","message":"\u001b[35mUser successfully retrieved\u001b[39m","service":"identity-service","timestamp":"2025-03-25T14:56:23.568Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-25T15:28:18.212Z"}
+{"level":"error","message":"\u001b[31mFrom Identity Service: Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-25T15:29:15.652Z"}

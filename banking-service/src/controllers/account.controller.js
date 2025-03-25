@@ -27,4 +27,4 @@ export const getAllAccounts = asyncHandler(async (req, res) => {
         logger.error(colors.red(`❌ Error fetching accounts: ${error.message}`));
         res.status(500).json({ message: "Internal server error", error: error.message });
     }
-});
+}); 

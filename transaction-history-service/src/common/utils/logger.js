@@ -8,7 +8,7 @@ const logger = createLogger({
     _format.splat(),
     _format.json()
   ),
-  defaultMeta: { service: "banking-service" },
+  defaultMeta: { service: "history-service" },
   transports: [
     new _transports.Console({
       format: _format.combine(

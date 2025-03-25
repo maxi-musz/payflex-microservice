@@ -581,3 +581,295 @@
 {"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-23T19:55:41.124Z"}
 {"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-23T19:55:41.128Z"}
 {"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-23T19:55:41.360Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-23T20:47:01.643Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\"}","service":"identity-service","timestamp":"2025-03-23T20:47:01.647Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-23T20:47:04.304Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/","service":"identity-service","timestamp":"2025-03-24T14:18:33.382Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:18:33.386Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:18:33.393Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/","service":"identity-service","timestamp":"2025-03-24T14:18:42.277Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:18:42.281Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:18:42.290Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/","service":"identity-service","timestamp":"2025-03-24T14:19:45.115Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:19:45.163Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:19:45.172Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/","service":"identity-service","timestamp":"2025-03-24T14:21:57.100Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:21:57.104Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:21:57.111Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/","service":"identity-service","timestamp":"2025-03-24T14:23:33.552Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:23:33.555Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:23:33.563Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/","service":"identity-service","timestamp":"2025-03-24T14:24:32.670Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:24:32.674Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:24:32.681Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/","service":"identity-service","timestamp":"2025-03-24T14:25:47.118Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:25:47.122Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:25:47.130Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/","service":"identity-service","timestamp":"2025-03-24T14:26:18.665Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:26:18.669Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:26:18.677Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-24T14:30:44.852Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus1111\"}","service":"identity-service","timestamp":"2025-03-24T14:30:44.855Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:30:44.865Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-24T14:31:20.219Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus1111\"}","service":"identity-service","timestamp":"2025-03-24T14:31:20.222Z"}
+{"level":"error","message":"\u001b[31mProxy error: \u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:31:20.229Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-24T14:34:21.160Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus1111\"}","service":"identity-service","timestamp":"2025-03-24T14:34:21.162Z"}
+{"level":"error","message":"Proxy error: ","service":"identity-service","timestamp":"2025-03-24T14:34:21.168Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-24T14:35:02.762Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus1111\"}","service":"identity-service","timestamp":"2025-03-24T14:35:02.765Z"}
+{"level":"error","message":"Proxy error: AggregateError","service":"identity-service","timestamp":"2025-03-24T14:35:02.772Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-24T14:36:06.736Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus1111\"}","service":"identity-service","timestamp":"2025-03-24T14:36:06.736Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:36:09.268Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/","service":"identity-service","timestamp":"2025-03-24T14:36:19.860Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:36:19.861Z"}
+{"level":"error","message":"Proxy error: AggregateError","service":"identity-service","timestamp":"2025-03-24T14:36:19.864Z"}
+{"level":"info","message":"Received GET request to /api/v1/history","service":"identity-service","timestamp":"2025-03-24T14:36:34.006Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:36:34.006Z"}
+{"level":"error","message":"Proxy error: AggregateError","service":"identity-service","timestamp":"2025-03-24T14:36:34.008Z"}
+{"level":"info","message":"Received GET request to /api/v1/history","service":"identity-service","timestamp":"2025-03-24T14:37:19.801Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:37:19.804Z"}
+{"level":"error","message":"\u001b[31mProxy error: AggregateError\u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:37:19.811Z"}
+{"level":"info","message":"Received GET request to /api/v1/history","service":"identity-service","timestamp":"2025-03-24T14:38:29.299Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:38:29.299Z"}
+{"level":"error","message":"\u001b[31mProxy error: AggregateError\u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:38:29.303Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T14:39:44.860Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:39:44.860Z"}
+{"level":"error","message":"\u001b[31mProxy error: AggregateError\u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:39:44.862Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T14:39:56.886Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:39:56.886Z"}
+{"level":"error","message":"\u001b[31mProxy error: AggregateError\u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:39:56.888Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T14:40:11.097Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:40:11.098Z"}
+{"level":"error","message":"\u001b[31mProxy error: AggregateError\u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:40:11.099Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T14:41:31.825Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:41:31.826Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 404\u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:41:32.051Z"}
+{"level":"error","message":"Error parsing proxy response: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON","service":"identity-service","stack":"SyntaxError: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON\n    at JSON.parse (<anonymous>)\n    at userResDecorator (file:///Users/macbook/Desktop/payflex%20microservice/api-gateway/src/server.js:160:27)\n    at /Users/macbook/Desktop/payflex microservice/api-gateway/node_modules/express-http-proxy/app/steps/decorateUserRes.js:69:14\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-03-24T14:41:32.052Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T14:48:44.817Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:48:44.820Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 404\u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:48:45.046Z"}
+{"body":"<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/v1/history/get-transaction-histories</pre>\n</body>\n</html>\n","level":"error","message":"Error parsing proxy response: Response is not JSON","service":"identity-service","statusCode":404,"timestamp":"2025-03-24T14:48:45.047Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T14:49:38.467Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:49:38.467Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 404\u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:49:38.689Z"}
+{"body":"<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/v1/history/get-transaction-histories</pre>\n</body>\n</html>\n","level":"error","message":"Error parsing proxy response: Response is not JSON","service":"identity-service","statusCode":404,"timestamp":"2025-03-24T14:49:38.690Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T14:52:00.540Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:52:00.541Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:52:00.765Z"}
+{"body":"<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>ReferenceError: colors is not defined<br> &nbsp; &nbsp;at file:///Users/macbook/Desktop/payflex%","level":"error","message":"Error parsing proxy response: Response is not JSON","service":"identity-service","statusCode":500,"timestamp":"2025-03-24T14:52:00.766Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T14:53:34.868Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:53:34.868Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:53:35.100Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T14:54:33.160Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:54:33.160Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:54:33.402Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T14:58:08.411Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:58:08.415Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T14:58:16.088Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:58:16.088Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-24T14:58:25.081Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:58:25.082Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-24T14:58:25.415Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T14:58:47.624Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T14:58:47.625Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T15:00:31.517Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T15:00:31.521Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-24T15:00:31.915Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T15:07:07.507Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T15:07:07.507Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 400\u001b[39m","service":"identity-service","timestamp":"2025-03-24T15:07:08.830Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T15:09:22.887Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T15:09:22.887Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 400\u001b[39m","service":"identity-service","timestamp":"2025-03-24T15:09:23.376Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T15:32:33.994Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T15:32:33.997Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 400\u001b[39m","service":"identity-service","timestamp":"2025-03-24T15:32:34.236Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T15:33:04.773Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T15:33:04.774Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-24T15:33:05.206Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T15:37:47.868Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T15:37:47.868Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 401\u001b[39m","service":"identity-service","timestamp":"2025-03-24T15:37:48.312Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/refresh-token","service":"identity-service","timestamp":"2025-03-24T15:38:07.648Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T15:38:07.648Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-24T15:38:07.900Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T15:38:12.442Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T15:38:12.442Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 401\u001b[39m","service":"identity-service","timestamp":"2025-03-24T15:38:12.847Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T15:39:17.962Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T15:39:17.962Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 401\u001b[39m","service":"identity-service","timestamp":"2025-03-24T15:39:18.762Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-24T15:57:48.785Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus1111\"}","service":"identity-service","timestamp":"2025-03-24T15:57:48.789Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-24T15:57:49.324Z"}
+{"level":"info","message":"Received GET request to /api/v1/user/cad70a0e-7bc8-4b9e-9489-04bb9cd9b861","service":"identity-service","timestamp":"2025-03-24T15:58:13.836Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T15:58:13.837Z"}
+{"level":"error","message":"\u001b[31mFrom API-Gateway, Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-24T15:58:13.838Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/cad70a0e-7bc8-4b9e-9489-04bb9cd9b861","service":"identity-service","timestamp":"2025-03-24T15:58:31.944Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T15:58:31.944Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 404\u001b[39m","service":"identity-service","timestamp":"2025-03-24T15:58:32.146Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/get-current-user","service":"identity-service","timestamp":"2025-03-24T16:00:31.178Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:00:31.178Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 404\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:00:31.626Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/get-current-user","service":"identity-service","timestamp":"2025-03-24T16:04:20.719Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:04:20.719Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:04:23.544Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/get-current-user/cad70a0e-7bc8-4b9e-9489-04bb9cd9b861","service":"identity-service","timestamp":"2025-03-24T16:06:31.206Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:06:31.206Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 404\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:06:31.432Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/get-current-user/cad70a0e-7bc8-4b9e-9489-04bb9cd9b861","service":"identity-service","timestamp":"2025-03-24T16:09:34.070Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:09:34.071Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:09:34.507Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/get-current-user/cad70a0e-7bc8-4b9e-9489-04bb9cd9b861","service":"identity-service","timestamp":"2025-03-24T16:10:47.939Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:10:47.940Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:10:48.346Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/get-current-user/cad70a0e-7bc8-4b9e-9489-04bb9cd9b861","service":"identity-service","timestamp":"2025-03-24T16:12:10.671Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:12:10.671Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:12:11.096Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/get-current-user/cad70a0e-7bc8-4b9e-9489-04bb9cd9b861","service":"identity-service","timestamp":"2025-03-24T16:12:24.914Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:12:24.914Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:12:25.330Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/get-current-user/cad70a0e-7bc8-4b9e-9489-04bb9cd9b861","service":"identity-service","timestamp":"2025-03-24T16:12:52.487Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:12:52.488Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:12:52.912Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T16:15:26.528Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:15:26.529Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:15:27.051Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T16:16:42.877Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:16:42.878Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:16:44.600Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T16:17:44.534Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:17:44.534Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:17:44.962Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T16:18:19.531Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:18:19.531Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 401\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:18:20.178Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T16:19:20.823Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:19:20.823Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:19:22.154Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T16:20:12.515Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:20:12.515Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:20:14.276Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T16:27:53.014Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:27:53.014Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:27:53.610Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T16:28:26.095Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:28:26.095Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:28:26.733Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T16:38:04.218Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:38:04.218Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:38:04.637Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T16:42:19.684Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:42:19.684Z"}
+{"level":"info","message":"\u001b[90mResponse received from Banking service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:42:20.098Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T16:43:53.384Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:43:53.387Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:43:53.789Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T16:53:52.126Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T16:53:52.126Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-24T16:53:52.568Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T17:00:24.949Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T17:00:24.950Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 401\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:00:26.456Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T17:00:55.989Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T17:00:55.989Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 401\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:01:02.635Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T17:03:04.587Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T17:03:04.587Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 401\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:03:05.482Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T17:06:32.945Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T17:06:32.945Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 401\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:06:34.426Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T17:11:47.082Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T17:11:47.082Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 401\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:11:48.427Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T17:21:33.288Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T17:21:33.288Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 401\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:21:34.185Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T17:29:07.862Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T17:29:07.863Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 401\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:29:12.019Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T17:30:32.145Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T17:30:32.145Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 401\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:30:32.895Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T17:32:56.796Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T17:32:56.796Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 401\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:32:57.938Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T17:33:37.793Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T17:33:37.793Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 401\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:33:40.123Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T17:34:28.906Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T17:34:28.906Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 401\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:34:29.786Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-24T17:38:25.889Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-24T17:38:25.890Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-24T17:38:26.773Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-25T07:42:01.552Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus1111\"}","service":"identity-service","timestamp":"2025-03-25T07:42:01.552Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-25T07:42:02.098Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-25T07:42:18.933Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-25T07:42:18.933Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-25T07:42:19.664Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-25T09:50:08.334Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-25T09:50:08.335Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-25T09:50:09.541Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-25T09:51:20.589Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-25T09:51:20.589Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-25T09:51:21.263Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-25T09:55:18.099Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-25T09:55:18.100Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-25T09:55:18.774Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-25T10:02:57.735Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-25T10:02:57.735Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-25T10:02:58.444Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-25T13:58:40.709Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\"}","service":"identity-service","timestamp":"2025-03-25T13:58:40.712Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-25T13:58:45.876Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/verify-email","service":"identity-service","timestamp":"2025-03-25T14:00:24.126Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"code\":\"9553\"}","service":"identity-service","timestamp":"2025-03-25T14:00:24.127Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-25T14:00:24.348Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/register","service":"identity-service","timestamp":"2025-03-25T14:00:43.519Z"}
+{"level":"info","message":"Request body: {\"first_name\":\"Daniel\",\"last_name\":\"Abimbola\",\"email\":\"adeyeye.toyorsi@gmail.com\",\"phone_number\":\"08146694787\",\"address\":{\"country\":\"Nigeria\",\"state\":\"Oyo\",\"city\":\"Ibadan\",\"home_address\":\"39, Technology Hub, Oke-Ado, Molete\"},\"gender\":\"male\",\"date_of_birth\":\"17-10-1950\",\"password\":\"maximus@01\",\"confirm_password\":\"maximus@01\"}","service":"identity-service","timestamp":"2025-03-25T14:00:43.519Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 201\u001b[39m","service":"identity-service","timestamp":"2025-03-25T14:00:43.811Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-25T14:33:43.414Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-25T14:33:43.415Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 401\u001b[39m","service":"identity-service","timestamp":"2025-03-25T14:33:44.063Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-25T14:34:07.025Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus1111\"}","service":"identity-service","timestamp":"2025-03-25T14:34:07.026Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 400\u001b[39m","service":"identity-service","timestamp":"2025-03-25T14:34:07.311Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/password-reset-otp","service":"identity-service","timestamp":"2025-03-25T14:35:01.058Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\"}","service":"identity-service","timestamp":"2025-03-25T14:35:01.059Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-25T14:35:03.558Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/verify-password-reset-otp","service":"identity-service","timestamp":"2025-03-25T14:35:17.809Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"code\":\"7594\"}","service":"identity-service","timestamp":"2025-03-25T14:35:17.809Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-25T14:35:18.021Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/update-password","service":"identity-service","timestamp":"2025-03-25T14:35:37.940Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"new_password\":\"maximus@01.\"}","service":"identity-service","timestamp":"2025-03-25T14:35:37.940Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-25T14:35:38.247Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-25T14:35:56.766Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus@01.\"}","service":"identity-service","timestamp":"2025-03-25T14:35:56.766Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-25T14:35:57.262Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-25T14:36:58.924Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-25T14:36:58.924Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-25T14:36:59.533Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-25T14:38:29.373Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-25T14:38:29.373Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-25T14:38:30.006Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-25T14:39:47.039Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-25T14:39:47.040Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-25T14:39:48.164Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/get-transaction-histories","service":"identity-service","timestamp":"2025-03-25T14:41:31.866Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-25T14:41:31.867Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-25T14:41:37.951Z"}
+{"level":"info","message":"Received GET request to /api/v1/history/a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11","service":"identity-service","timestamp":"2025-03-25T14:56:17.879Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-25T14:56:17.879Z"}
+{"level":"info","message":"\u001b[35mResponse received from Trans-History service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-25T14:56:23.586Z"}
+{"level":"info","message":"Received GET request to /api/v1/user/dashboard","service":"identity-service","timestamp":"2025-03-25T15:27:32.602Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-25T15:27:32.602Z"}
+{"level":"error","message":"\u001b[31mFrom API-Gateway, Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-25T15:27:32.603Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/get-current-user","service":"identity-service","timestamp":"2025-03-25T15:29:15.386Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-25T15:29:15.386Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 404\u001b[39m","service":"identity-service","timestamp":"2025-03-25T15:29:15.655Z"}

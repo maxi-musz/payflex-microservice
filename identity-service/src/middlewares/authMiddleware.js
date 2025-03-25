@@ -1,5 +1,5 @@
 import redisClient from "../config/redisClient.js";
-import User from "../models/user.model.js";
+import prisma from "../config/prismaClient.js";
 import jwt from 'jsonwebtoken';
 import colors from "colors"
 
@@ -13,6 +13,7 @@ const protect = async (req, res, next) => {
     }
 
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    console.log(decoded)
     const cacheKey = `user:${decoded.userId}`;
 
     let user = await redisClient.get(cacheKey);
@@ -21,8 +22,11 @@ const protect = async (req, res, next) => {
       console.log(colors.bgWhite("✅ User found in cache:", decoded.userId));
       req.user = JSON.parse(user);
     } else {
-      console.log(colors.bgWhite("🔍 User not found in cache, fetching from database...", decoded.userId));
-      user = await User.findById(decoded.userId).select("-password");
+      console.log(colors.red("🔍 User not found in cache, fetching from database...", decoded.userId));
+      user = await prisma.user.findUnique({
+        where: { id: decoded.userId },
+        select: { id: true }
+      })
 
       if (!user) {
         console.log(colors.red("❌ Not authorized: User not found"));

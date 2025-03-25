@@ -48,7 +48,7 @@ app.use(rateLimiterMiddleware);
 
 // Routes
 app.use("/api/v1/auth", authRoutes);
-app.use("/api/v1/user", userRoutes);
+app.use("/api/v1/users", userRoutes);
 app.use("/api/v1/ngn-transfer", transferRoutes);
 
 // Global error handler
@@ -58,7 +58,7 @@ app.use(errorHandler);
 app.use(
   "*",
   asyncHandler(async (req, res) => {
-    logger.error(colors.red("Route not found"));
+    logger.error(colors.red("From Identity Service: Route not found"));
     res.status(404).json({ success: false, message: "Route not found" });
   })
 );
