@@ -6,9 +6,35 @@
 
 generator client {
   provider = "prisma-client-js"
+  previewFeatures = ["multiSchema"]
 }
 
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
+  schemas  = ["banking"]
+}
+
+model Account {
+  id String @id @default(uuid())
+  user_id String
+  account_number String @unique
+  accountType AccountType
+  bank_name String
+  bank_code String
+  balance Float @default(0)
+  isActive Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@schema("banking")
+}
+
+enum AccountType {
+  NGN
+  USD
+  EURGBP
+
+  @@schema("banking")
 }

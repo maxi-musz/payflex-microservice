@@ -14,10 +14,10 @@ import prisma from "../config/prismaClient.js";
 export const requestVerificationCode = async (email) => {
   try {
     const user = await prisma.user.findUnique({ where: { email } });
-    // if (user && user.is_email_verified) {
-    //   logger.error(colors.red(`User with email: ${email} already verified`));
-    //   throw new Error(`User with email: ${email} already exists`);
-    // }
+    if (user && user.is_email_verified) {
+      logger.error(colors.red(`User with email: ${email} already verified`));
+      throw new Error(`User with email: ${email} already exists`);
+    }
 
     // Create a new user entry with just email and OTP
     const otp = crypto.randomInt(1000, 9999).toString();

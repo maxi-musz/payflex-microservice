@@ -48,8 +48,20 @@ export const getUserDashboard = asyncHandler(async (req, res) => {
   try {
     const user = req.user;
 
-    const getTransactionHistories = `${process.env.TRANSACTION_SERVICE_URL}/${process.env.API_VERSION}/history/get-transaction-histories`;
+    // ✅ Fetch all bank accounts belogning to the user, if there is none, create a new only (only ngn account)
+    const getAllAccounts = `${process.env.BANKING_SERVICE_URL}/${process.env.API_VERSION}/banking/get-all-accounts`
+    let responseFromGetAllAccounts
 
+    try {
+      responseFromGetAllAccounts = await axios.get(getAllAccounts, {
+        headers: { Authorization: `Bearer ${req.token}` },
+      })
+    } catch (error) {
+      console.error(colors.red("IS - Error fetching all accounts:", error.message));
+    }
+
+
+    const getTransactionHistories = `${process.env.TRANSACTION_SERVICE_URL}/${process.env.API_VERSION}/history/get-transaction-histories`;
     let response;
 
     // ✅ Fetch transactions, forwarding user token
@@ -84,11 +96,5 @@ export const getUserDashboard = asyncHandler(async (req, res) => {
     return res.status(500).json({ success: false, message: "Server error" });
   }
 });
-
-
-
-export const getUserDashboardNew = async (req, res) => {
-  
-};
 
   
