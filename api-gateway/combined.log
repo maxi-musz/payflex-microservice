@@ -1005,3 +1005,21 @@
 {"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-25T22:25:45.170Z"}
 {"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-25T22:25:45.170Z"}
 {"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-25T22:25:45.694Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-26T16:58:13.883Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\"}","service":"identity-service","timestamp":"2025-03-26T16:58:13.887Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-26T16:58:13.922Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-26T18:03:46.705Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\"}","service":"identity-service","timestamp":"2025-03-26T18:03:46.705Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-26T18:03:47.686Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-26T18:05:45.788Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\"}","service":"identity-service","timestamp":"2025-03-26T18:05:45.788Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-26T18:05:50.431Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/verify-email","service":"identity-service","timestamp":"2025-03-26T18:10:15.995Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"code\":\"1958\"}","service":"identity-service","timestamp":"2025-03-26T18:10:15.995Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-26T18:10:19.499Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-26T18:10:38.147Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\"}","service":"identity-service","timestamp":"2025-03-26T18:10:38.147Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-26T18:10:39.394Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/register","service":"identity-service","timestamp":"2025-03-26T18:10:48.112Z"}
+{"level":"info","message":"Request body: {\"first_name\":\"Daniel\",\"last_name\":\"Abimbola\",\"email\":\"adeyeye.toyorsi@gmail.com\",\"phone_number\":\"08146694787\",\"address\":{\"country\":\"Nigeria\",\"state\":\"Oyo\",\"city\":\"Ibadan\",\"home_address\":\"39, Technology Hub, Oke-Ado, Molete\"},\"gender\":\"male\",\"date_of_birth\":\"17-10-1950\",\"password\":\"maximus@01\",\"confirm_password\":\"maximus@01\"}","service":"identity-service","timestamp":"2025-03-26T18:10:48.112Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 201\u001b[39m","service":"identity-service","timestamp":"2025-03-26T18:10:52.314Z"}

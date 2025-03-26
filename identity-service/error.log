@@ -80,3 +80,7 @@
 {"level":"error","message":"\u001b[31mError fetching transaction history: Request failed with status code 401\u001b[39m","service":"identity-service","timestamp":"2025-03-25T20:23:03.844Z"}
 {"level":"error","message":"\u001b[31mError fetching transaction history: Request failed with status code 401\u001b[39m","service":"identity-service","timestamp":"2025-03-25T20:23:55.388Z"}
 {"level":"error","message":"\u001b[31mError fetching transaction history: Request failed with status code 401\u001b[39m","service":"identity-service","timestamp":"2025-03-25T21:11:38.348Z"}
+{"level":"error","message":"\u001b[31mCannot read properties of undefined (reading 'findUnique')\u001b[39m","service":"identity-service","timestamp":"2025-03-26T16:58:13.915Z"}
+{"level":"error","message":"\u001b[31mCannot read properties of undefined (reading 'create')\u001b[39m","service":"identity-service","timestamp":"2025-03-26T18:03:47.681Z"}
+{"level":"error","message":"\u001b[31mUser with email: adeyeye.toyorsi@gmail.com already verified\u001b[39m","service":"identity-service","timestamp":"2025-03-26T18:10:39.391Z"}
+{"level":"error","message":"\u001b[31mUser with email: adeyeye.toyorsi@gmail.com already exists\u001b[39m","service":"identity-service","timestamp":"2025-03-26T18:10:39.392Z"}

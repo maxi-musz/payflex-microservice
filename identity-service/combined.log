@@ -781,3 +781,16 @@
 {"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-25T22:25:26.027Z"}
 {"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-25T22:25:31.131Z"}
 {"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-25T22:25:42.073Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-26T16:57:32.265Z"}
+{"level":"error","message":"\u001b[31mCannot read properties of undefined (reading 'findUnique')\u001b[39m","service":"identity-service","timestamp":"2025-03-26T16:58:13.915Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-26T17:00:02.336Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-26T17:00:03.829Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-26T17:05:26.458Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-26T17:05:45.986Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-26T17:58:36.041Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-26T18:03:41.700Z"}
+{"level":"error","message":"\u001b[31mCannot read properties of undefined (reading 'create')\u001b[39m","service":"identity-service","timestamp":"2025-03-26T18:03:47.681Z"}
+{"level":"info","message":"Identity service running on port 4001","service":"identity-service","timestamp":"2025-03-26T18:04:25.003Z"}
+{"level":"info","message":"\u001b[35mOTP code: 1958 sent to user: adeyeye.toyorsi@gmail.com\u001b[39m","service":"identity-service","timestamp":"2025-03-26T18:05:50.426Z"}
+{"level":"error","message":"\u001b[31mUser with email: adeyeye.toyorsi@gmail.com already verified\u001b[39m","service":"identity-service","timestamp":"2025-03-26T18:10:39.391Z"}
+{"level":"error","message":"\u001b[31mUser with email: adeyeye.toyorsi@gmail.com already exists\u001b[39m","service":"identity-service","timestamp":"2025-03-26T18:10:39.392Z"}

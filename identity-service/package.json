@@ -40,7 +40,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "migrate": "DATABASE_URL=postgresql://...?schema=identity prisma migrate dev",
+    "deploy": "DATABASE_URL=render_url?schema=identity prisma migrate deploy"
   },
   "keywords": [],
   "author": "",
