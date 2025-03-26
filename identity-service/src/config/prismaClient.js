@@ -1,7 +1,18 @@
 import { PrismaClient } from "@prisma/client";
 import colors from "colors";
 
-const prisma = new PrismaClient();
+// Determine the database URL based on environment
+const databaseUrl = process.env.NODE_ENV === 'production'
+  ? process.env.DATABASE_URL_RENDER_EXTERNAL
+  : process.env.DATABASE_URL;
+
+const prisma = new PrismaClient({
+  datasources: {
+    db: {
+      url: databaseUrl
+    }
+  }
+});
 
 prisma
   .$connect()
@@ -11,4 +22,4 @@ prisma
     process.exit(1);
   });
 
-export default prisma;
+export default prisma; 

@@ -25,6 +25,9 @@ CREATE TYPE "transaction_histories"."CurrencyType" AS ENUM ('NGN', 'USD', 'GBP',
 -- CreateEnum
 CREATE TYPE "transaction_histories"."PaymentMethod" AS ENUM ('card', 'bank_transfer', 'wallet', 'ussd');
 
+-- CreateEnum
+CREATE TYPE "banking"."AccountType" AS ENUM ('NGN', 'USD', 'EURGBP');
+
 -- CreateTable
 CREATE TABLE "identity"."User" (
     "id" TEXT NOT NULL,
@@ -121,6 +124,22 @@ CREATE TABLE "transaction_histories"."TransactionIcon" (
     CONSTRAINT "TransactionIcon_pkey" PRIMARY KEY ("id")
 );
 
+-- CreateTable
+CREATE TABLE "banking"."Account" (
+    "id" TEXT NOT NULL,
+    "user_id" TEXT NOT NULL,
+    "account_number" TEXT NOT NULL,
+    "accountType" "banking"."AccountType" NOT NULL,
+    "bank_name" TEXT NOT NULL,
+    "bank_code" TEXT NOT NULL,
+    "balance" DOUBLE PRECISION NOT NULL DEFAULT 0,
+    "isActive" BOOLEAN NOT NULL DEFAULT true,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP(3) NOT NULL,
+
+    CONSTRAINT "Account_pkey" PRIMARY KEY ("id")
+);
+
 -- CreateIndex
 CREATE UNIQUE INDEX "User_email_key" ON "identity"."User"("email");
 
@@ -147,6 +166,9 @@ CREATE UNIQUE INDEX "SenderDetails_transaction_id_key" ON "transaction_histories
 
 -- CreateIndex
 CREATE UNIQUE INDEX "TransactionIcon_transaction_id_key" ON "transaction_histories"."TransactionIcon"("transaction_id");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Account_account_number_key" ON "banking"."Account"("account_number");
 
 -- AddForeignKey
 ALTER TABLE "identity"."ProfileImage" ADD CONSTRAINT "ProfileImage_userId_fkey" FOREIGN KEY ("userId") REFERENCES "identity"."User"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
