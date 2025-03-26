@@ -7,6 +7,7 @@ import logger from "./utils/logger.js";
 import asyncHandler from "./middlewares/asyncHandler.js";
 import colors from "colors";
 import cookieParser from "cookie-parser";
+import stripAnsi from "strip-ansi";
 import { verifyToken } from "./middlewares/authMiddleware.js";
 
 dotenv.config();
@@ -72,24 +73,28 @@ app.use(
     ...proxyOptions,
     proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
       proxyReqOpts.headers["Content-Type"] = "application/json";
-      
-      // ✅ Forward cookies to identity service
       if (srcReq.headers.cookie) {
         proxyReqOpts.headers["cookie"] = srcReq.headers.cookie;
       }
-
       return proxyReqOpts;
     },
     userResHeaderDecorator: (headers, userReq, userRes, proxyReq, proxyRes) => {
-      // ✅ Allow cookies from Banking Service to be returned to the client
       headers["Access-Control-Allow-Credentials"] = "true";
       return headers;
     },
     userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
-      logger.info(colors.magenta(`Response received from Identity service: ${proxyRes.statusCode}`));
+      logger.info(
+        colors.magenta(
+          `Response received from Identity service: ${proxyRes.statusCode}`
+        )
+      );
+      
+      // Convert response to string and strip ANSI codes
+      const rawData = proxyResData.toString("utf-8");
+      const cleanData = stripAnsi(rawData);
       
       try {
-        const data = JSON.parse(proxyResData.toString("utf-8"));
+        const data = JSON.parse(cleanData);
         return JSON.stringify(data);
       } catch (err) {
         logger.error("Error parsing proxy response:", err);
