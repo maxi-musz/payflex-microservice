@@ -13,12 +13,12 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@prisma/client": "^6.5.0",
     "nodemon": "^3.1.9",
     "pg": "^8.14.1",
     "prisma": "^6.5.0"
   },
   "dependencies": {
+    "@prisma/client": "^6.5.0",
     "axios": "^1.8.4",
     "colors": "^1.4.0",
     "cookie-parser": "^1.4.7",
@@ -33,4 +33,4 @@
     "winston": "^3.17.0",
     "zod": "^3.24.2"
   }
-} 
+}

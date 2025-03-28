@@ -313,3 +313,4 @@
 {"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-28T08:49:23.202Z"}
 {"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-28T08:50:16.503Z"}
 {"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-28T08:50:29.945Z"}
+{"level":"info","message":"\u001b[33mTransaction History service running on port 4002\u001b[39m","service":"history-service","timestamp":"2025-03-28T09:26:10.602Z"}
