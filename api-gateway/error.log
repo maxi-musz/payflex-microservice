@@ -55,3 +55,4 @@
 {"level":"error","message":"\u001b[31mFrom API-Gateway, Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-24T15:58:13.838Z"}
 {"level":"error","message":"\u001b[31mFrom API-Gateway, Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-25T15:27:32.603Z"}
 {"level":"error","message":"\u001b[31mFrom API-Gateway, Route not found\u001b[39m","service":"identity-service","timestamp":"2025-03-25T16:11:46.994Z"}
+{"level":"error","message":"\u001b[31mProxy error: TypeError: Cannot read properties of undefined (reading 'userId')\u001b[39m","service":"identity-service","timestamp":"2025-03-28T07:51:33.722Z"}

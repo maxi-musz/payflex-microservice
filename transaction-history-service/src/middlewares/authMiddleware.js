@@ -1,18 +1,30 @@
 // shared/authMiddleware.js
+import colors from "colors"
+import jwt from "jsonwebtoken"
 
-import logger from "../common/utils/logger.js";
+export const validateToken = (req, res, next) => {
+  console.log(colors.cyan("Verifying token"))
+  const authHeader = req.headers["authorization"];
+  const token = authHeader && authHeader.split(" ")[1];
 
-export const authenticateRequest = (req, res, next) => {
-  const userId = req.headers["x-user-id"];
-
-  if (!userId) {
-    logger.warn(`Access attempted without user ID`);
+  if (!token) {
+    console.log(colors.red("Access attempt without valid token!"));
     return res.status(401).json({
+      message: "Authentication required",
       success: false,
-      message: "Authentication required! Please login to continue",
     });
   }
+  
+  jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
+    if (err) {
+      logger.warn("Invalid token!");
+      return res.status(429).json({
+        message: "Invalid token!",
+        success: false,
+      });
+    }
 
-  req.user = { userId };
-  next();
+    req.user = user;
+    next();
+  });
 };

@@ -48,30 +48,24 @@ export const getUserDashboard = asyncHandler(async (req, res) => {
   try {
     const user = req.user;
 
-    // ✅ Fetch all bank accounts belogning to the user, if there is none, create a new only (only ngn account)
-    const getAllAccounts = `${process.env.BANKING_SERVICE_URL}/${process.env.API_VERSION}/banking/get-all-accounts`
-    let responseFromGetAllAccounts
-
-    try {
-      responseFromGetAllAccounts = await axios.get(getAllAccounts, {
-        headers: { Authorization: `Bearer ${req.token}` },
-      })
-    } catch (error) {
-      console.error(colors.red("IS - Error fetching all accounts:", error.message));
-    }
-
-
     const getTransactionHistories = `${process.env.TRANSACTION_SERVICE_URL}/${process.env.API_VERSION}/history/get-transaction-histories`;
     let response;
 
     // ✅ Fetch transactions, forwarding user token
     try {
+      console.log("User Id: ", user.id)
       response = await axios.get(getTransactionHistories, {
         headers: { Authorization: `Bearer ${req.token}` }, // Forward token
+        "x-user-id": req.user.id,
       });
     } catch (error) {
-      console.error(colors.red("Error fetching transaction history:", error.message));
-      return res.status(500).json({ success: false, message: "Failed to fetch transaction history" });
+      if(error.status === 401) {
+        console.error(colors.red("Error fetching transaction history: user must be signed in"));
+        return res.status(500).json({ success: false, message: "Error fetching transaction history: user must be signed in" });
+      } else {
+        console.error(colors.red("Error fetching transaction history: ", error.message));
+        return res.status(500).json({ success: false, message: "Error fetching transaction history: user must be signed in" });
+      }
     }
 
     if (!response.data || response.data.data.length < 1) {
@@ -96,5 +90,3 @@ export const getUserDashboard = asyncHandler(async (req, res) => {
     return res.status(500).json({ success: false, message: "Server error" });
   }
 });
-
-  

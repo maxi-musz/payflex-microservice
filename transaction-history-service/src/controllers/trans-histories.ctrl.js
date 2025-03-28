@@ -8,19 +8,21 @@ export const getTransactionHistory = asyncHandler(async (req, res) => {
     console.log(colors.cyan("🔹 Fetching user transaction history"));
   
     try {
-      let token = req.headers.authorization?.split(" ")[1];
+      // let token = req.headers.authorization?.split(" ")[1];
   
-      if (!token) {
-        return res.status(401).json({ success: false, message: "Not authorized, no token" });
-      }
+      // if (!token) {
+      //   return res.status(401).json({ success: false, message: "Not authorized, no token" });
+      // }
   
-      // ✅ Extract user ID from the token
-      const decoded = jwt.verify(token, process.env.JWT_SECRET);
-      if (!decoded.userId) {
-        return res.status(401).json({ success: false, message: "Invalid token" });
-      }
+      // // ✅ Extract user ID from the token
+      // const decoded = jwt.verify(token, process.env.JWT_SECRET);
+      // if (!decoded.userId) {
+      //   return res.status(401).json({ success: false, message: "Invalid token" });
+      // }
   
-      const userId = decoded.userId;
+      // const userId = decoded.userId;
+
+      const userId = req.user.userId;
   
       const transactionHistories = await prisma.transactionHistory.findMany({
         where: { user_id: userId },
@@ -29,7 +31,7 @@ export const getTransactionHistory = asyncHandler(async (req, res) => {
           sender_details: true  
         },
         orderBy: { createdAt: 'desc' }
-      });
+      }); 
   
       if (!transactionHistories || transactionHistories.length < 1) {
         console.log(colors.magenta("No available transaction at the moment"))

@@ -1,17 +1,29 @@
 import jwt from "jsonwebtoken";
+import colors from "colors"
 
-export const verifyToken = (req, res, next) => {
-  const token = req.headers.authorization?.split(" ")[1];
+export const validateToken = (req, res, next) => {
+  console.log(colors.cyan("Verifying token"))
+  const authHeader = req.headers["authorization"];
+  const token = authHeader && authHeader.split(" ")[1];
 
   if (!token) {
-    return res.status(401).json({ success: false, message: "No token provided" });
+    console.log(colors.red("Access attempt without valid token!"));
+    return res.status(401).json({
+      message: "Authentication required",
+      success: false,
+    });
   }
+  
+  jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
+    if (err) {
+      logger.warn("Invalid token!");
+      return res.status(429).json({
+        message: "Invalid token!",
+        success: false,
+      });
+    }
 
-  try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET); // Use the same secret from identity service
-    req.user = decoded; // Attach user data to request
+    req.user = user;
     next();
-  } catch (error) {
-    return res.status(401).json({ success: false, message: "Invalid token" });
-  }
+  });
 };

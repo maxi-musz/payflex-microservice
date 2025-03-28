@@ -1023,3 +1023,108 @@
 {"level":"info","message":"Received POST request to /api/v1/auth/register","service":"identity-service","timestamp":"2025-03-26T18:10:48.112Z"}
 {"level":"info","message":"Request body: {\"first_name\":\"Daniel\",\"last_name\":\"Abimbola\",\"email\":\"adeyeye.toyorsi@gmail.com\",\"phone_number\":\"08146694787\",\"address\":{\"country\":\"Nigeria\",\"state\":\"Oyo\",\"city\":\"Ibadan\",\"home_address\":\"39, Technology Hub, Oke-Ado, Molete\"},\"gender\":\"male\",\"date_of_birth\":\"17-10-1950\",\"password\":\"maximus@01\",\"confirm_password\":\"maximus@01\"}","service":"identity-service","timestamp":"2025-03-26T18:10:48.112Z"}
 {"level":"info","message":"\u001b[35mResponse received from Identity service: 201\u001b[39m","service":"identity-service","timestamp":"2025-03-26T18:10:52.314Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T07:23:37.184Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T07:23:37.188Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-28T07:23:37.734Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T07:30:51.966Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T07:30:51.967Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T07:30:52.854Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T07:33:19.917Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T07:33:19.918Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T07:33:20.364Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T07:37:13.095Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T07:37:13.096Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T07:37:13.558Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-28T07:38:04.119Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus@01\"}","service":"identity-service","timestamp":"2025-03-28T07:38:04.120Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 400\u001b[39m","service":"identity-service","timestamp":"2025-03-28T07:38:04.471Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/request-code","service":"identity-service","timestamp":"2025-03-28T07:38:44.237Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\"}","service":"identity-service","timestamp":"2025-03-28T07:38:44.238Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-28T07:38:47.365Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/verify-email","service":"identity-service","timestamp":"2025-03-28T07:39:04.317Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"code\":\"9234\"}","service":"identity-service","timestamp":"2025-03-28T07:39:04.317Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-28T07:39:04.533Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/register","service":"identity-service","timestamp":"2025-03-28T07:39:18.739Z"}
+{"level":"info","message":"Request body: {\"first_name\":\"Daniel\",\"last_name\":\"Abimbola\",\"email\":\"adeyeye.toyorsi@gmail.com\",\"phone_number\":\"08146694787\",\"address\":{\"country\":\"Nigeria\",\"state\":\"Oyo\",\"city\":\"Ibadan\",\"home_address\":\"39, Technology Hub, Oke-Ado, Molete\"},\"gender\":\"male\",\"date_of_birth\":\"17-10-1950\",\"password\":\"maximus@01\",\"confirm_password\":\"maximus@01\"}","service":"identity-service","timestamp":"2025-03-28T07:39:18.739Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 201\u001b[39m","service":"identity-service","timestamp":"2025-03-28T07:39:19.050Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-28T07:39:32.889Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus@01\"}","service":"identity-service","timestamp":"2025-03-28T07:39:32.889Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-28T07:39:33.449Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T07:39:50.781Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T07:39:50.781Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T07:39:51.229Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T07:51:33.717Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T07:51:33.720Z"}
+{"level":"error","message":"\u001b[31mProxy error: TypeError: Cannot read properties of undefined (reading 'userId')\u001b[39m","service":"identity-service","timestamp":"2025-03-28T07:51:33.722Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T07:53:10.184Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T07:53:10.187Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T07:53:10.626Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:05:41.224Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:05:41.227Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:05:41.710Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:06:36.488Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:06:36.488Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:06:36.936Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:06:56.695Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:06:56.695Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:06:57.144Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:07:08.534Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:07:08.535Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:07:09.139Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:07:29.153Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:07:29.153Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:07:29.593Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:07:38.821Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:07:38.821Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:07:39.271Z"}
+{"level":"info","message":"Received POST request to /api/v1/auth/login","service":"identity-service","timestamp":"2025-03-28T08:08:38.956Z"}
+{"level":"info","message":"Request body: {\"email\":\"adeyeye.toyorsi@gmail.com\",\"password\":\"maximus@01\"}","service":"identity-service","timestamp":"2025-03-28T08:08:38.956Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:08:39.469Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:08:44.724Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:08:44.724Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:08:45.151Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:19:57.374Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:19:57.378Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:19:57.974Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:21:09.219Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:21:09.222Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:21:09.649Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:21:55.633Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:21:55.634Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:21:56.104Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:22:19.032Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:22:19.032Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:22:19.492Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:36:36.514Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:36:36.514Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:36:36.998Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:38:03.990Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:38:03.990Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:38:04.424Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:39:35.353Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:39:35.357Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:39:35.784Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:43:57.194Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:43:57.198Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:43:57.624Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:45:29.523Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:45:29.524Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:45:29.944Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:47:59.719Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:47:59.719Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:48:00.141Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:48:27.984Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:48:27.984Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:48:28.383Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:49:48.683Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:49:48.683Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 500\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:49:49.085Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:50:21.336Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:50:21.337Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:50:21.750Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T08:51:59.106Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T08:51:59.106Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-28T08:51:59.546Z"}
+{"level":"info","message":"Received GET request to /api/v1/users/dashboard","service":"identity-service","timestamp":"2025-03-28T09:20:12.441Z"}
+{"level":"info","message":"Request body: {}","service":"identity-service","timestamp":"2025-03-28T09:20:12.441Z"}
+{"level":"info","message":"\u001b[35mResponse received from Identity service: 200\u001b[39m","service":"identity-service","timestamp":"2025-03-28T09:20:13.279Z"}

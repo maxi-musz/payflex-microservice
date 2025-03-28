@@ -8,7 +8,7 @@ import asyncHandler from "./middlewares/asyncHandler.js";
 import colors from "colors";
 import cookieParser from "cookie-parser";
 import stripAnsi from "strip-ansi";
-import { verifyToken } from "./middlewares/authMiddleware.js";
+import { validateToken } from "./middlewares/authMiddleware.js";
 
 dotenv.config();
 
@@ -23,7 +23,7 @@ app.use(cookieParser()); // ✅ Ensure cookie parsing is enabled
 const rateLimiter = new RateLimiterRedis({
   storeClient: redisClient,
   keyPrefix: "gateway",
-  points: 25, // Allow 100 requests
+  points: 25, // Allow 25 requests
   duration: 60, // per 60 seconds (1 min)
 });
 
@@ -141,12 +141,14 @@ app.use(
 // ✅ Fixed Proxy Middleware for Transaction hisory Service
 app.use(
   "/api/v1/history",
+  validateToken,
   proxy(process.env.TRANSACTION_HISTORY_SERVICE_URL, {
     ...proxyOptions,
     proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
       proxyReqOpts.headers["Content-Type"] = "application/json";
+      proxyReqOpts.headers["x-user-id"] = srcReq.user.userId;
       
-      // ✅ Forward cookies to identity service
+      // ✅ Forward cookies to transaction history service
       if (srcReq.headers.cookie) {
         proxyReqOpts.headers["cookie"] = srcReq.headers.cookie;
       }
@@ -154,6 +156,7 @@ app.use(
       // ✅ Forward Authorization header
       if (srcReq.headers.authorization) {
         proxyReqOpts.headers["Authorization"] = srcReq.headers.authorization;
+        
       }
 
       return proxyReqOpts;
